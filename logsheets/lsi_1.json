@@ -1,0 +1,147 @@
+{
+    "id": "lsi_1",
+    "version": "1.0.0",
+    "name": "LSI 1",
+    "description": "Site Description Form",
+    "fields": [
+      {
+        "id": "site_name",
+        "label": "Site name",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "sampling_date_start",
+        "label": "Sampling date start",
+        "type": "date",
+        "required": true
+      },
+      {
+        "id": "collection_time_start",
+        "label": "Sampling time start",
+        "type": "time",
+        "required": true
+      },
+      {
+        "id": "sampling_date_end",
+        "label": "Sampling date end",
+        "type": "date",
+        "required": true
+      },
+      {
+        "id": "sampling_time_end",
+        "label": "Sampling time end",
+        "type": "time",
+        "required": true
+      },
+      {
+        "id": "site_image",
+        "label": "Sampling site layout overview",
+        "type": "image_display",
+        "image": "images/site.png"
+      },
+      {
+        "id": "site_layout",
+        "label": "Site layout",
+        "type": "table",
+        "rows": ["Distance (m)"],
+        "columns": ["A", "B", "C", "D", "E", "F", "G", "H"],
+        "inputType": "text",
+        "required": true
+      },
+      {
+        "id": "weather_conditions",
+        "label": "Weather conditions",
+        "type": "section"
+      },
+      {
+        "id": "rainfall",
+        "label": "Rainfall intensity",
+        "type": "select",
+        "options": ["rain", "showers", "dry", "drought"],
+        "required": false
+      },
+      {
+        "id": "cloud_coverage",
+        "label": "Cloud coverage",
+        "type": "select",
+        "options": ["1/8 or less", "2/8 - 4/8", "5/8 - 6/8", "7/8 or greater"],
+        "required": false
+      },
+      {
+        "id": "general_weather_description",
+        "label": "General weather description",
+        "type": "text",
+        "required": false
+      },
+      {
+        "id": "elevation",
+        "label": "Elevation (m)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "temperature",
+        "label": "Temperature (°C)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "dewpoint_temperature",
+        "label": "Dewpoint temperature (°C)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "pressure",
+        "label": "Pressure (hPa)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "wind_speed",
+        "label": "Wind speed (km/h)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "wind_direction",
+        "label": "Wind direction",
+        "type": "select",
+        "options": ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"],
+        "required": false
+      },
+      {
+        "id": "humidity",
+        "label": "Humidity (%)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "precipitation_rate",
+        "label": "Precipitation rate (mm)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "current_precipitation",
+        "label": "Current precipitation (mm)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "comments",
+        "label": "Comments",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+  }
