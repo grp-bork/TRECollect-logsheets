@@ -1,0 +1,132 @@
+{
+    "id": "lsi_2",
+    "version": "1.0.0",
+    "name": "LSI 2",
+    "description": "Soil Transect Description Form",
+    "fields": [
+      {
+        "id": "transect_number",
+        "label": "Transect number",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "transect_photo",
+        "label": "Transect Photo",
+        "type": "photo",
+        "required": false
+      },
+      {
+        "id": "vegetation_type",
+        "label": "Vegetation type",
+        "type": "select",
+        "options": ["forest", "woodland", "scrub", "shrubland", "savanna", "grassland", "meadow", "tundra", "semi-desert", "desert", "no vegetation"],
+        "required": false
+      },
+      {
+        "id": "vegetation_subtype",
+        "label": "Vegetation subtype",
+        "type": "select",
+        "options": ["rainforest", "parkland", "thicket", "dwarf scrub", "shrub steppe", "grove savanna", "savanna woodland", "shrub savanna", "steppe", "cold desert"],
+        "required": false
+      },
+      {
+        "id": "dominant_tree_species",
+        "label": "Dominant tree species",
+        "type": "select",
+        "options": ["Deciduous", "Coniferous", "Mixed deciduous-coniferous"],
+        "required": false
+      },
+      {
+        "id": "density_grassland",
+        "label": "Grassland density",
+        "type": "select",
+        "options": ["no vegetation", "sparse vegetation (less than 50% covered)", "50-99% covered but not high", "fully covered and high"],
+        "required": false
+      },
+      {
+        "id": "density_woodland",
+        "label": "Woodland density",
+        "type": "select",
+        "options": ["clearing", "below 5 trees per 100 m^2", "5-20 trees per 100 m^2", "more than 20 trees per 100 m^2"],
+        "required": false
+      },
+      {
+        "id": "density_shrubland",
+        "label": "Shrubland density",
+        "type": "select",
+        "options": ["no vegetation", "sparse vegetation (less than 50% covered)", "50-99% covered but not high", "fully covered and high"],
+        "required": false
+      },
+      {
+        "id": "litter_depth",
+        "label": "Litter depth",
+        "type": "select",
+        "options": ["no litter", "less than 3 cm", "3-10 cm", "more than 10 cm"],
+        "required": false
+      },
+      {
+        "id": "litter_age",
+        "label": "Litter age",
+        "type": "select",
+        "options": ["no litter", "freshly dropped this year", "visible fragments of previous years’ litter", "accumulating for many years"],
+        "required": false
+      },
+      {
+        "id": "litter_spatial_homogeneity",
+        "label": "Litter spatial homogeneity",
+        "type": "select",
+        "options": ["no litter", "less than 20% of surface", "20-60% of surface", "above 60% of surface"],
+        "required": false
+      },
+      {
+        "id": "geomorphology_of_transect_location",
+        "label": "Geomorphology of transect location",
+        "type": "select",
+        "options": ["flat/plateau", "furrow", "slope"],
+        "required": false
+      },
+      {
+        "id": "geomorphology_between_squares",
+        "label": "Geomorphology between squares",
+        "type": "select",
+        "options": ["flat", "undulating", "rugged"],
+        "required": false
+      },
+      {
+        "id": "slope_angle",
+        "label": "Transect slope angle (°)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "slope_aspect",
+        "label": "Transect slope aspect / exposition",
+        "type": "multiselect",
+        "options": ["N", "NE", "E", "SE", "S", "SW", "W", "NW"],
+        "required": false
+      },
+      {
+        "id": "anthropogenic_pressure",
+        "label": "Qualitative assessment of anthropogenic pressure",
+        "type": "multiselect",
+        "options": ["residential", "agricultural", "industrial", "buildings", "paths for pedestrians", "paths for vehicles", "rubbish", "cigarette butts"],
+        "required": false
+      },
+      {
+        "id": "pl_ec_land_classification",
+        "label": "The Production-Living-Ecological Land Classification System",
+        "type": "select",
+        "options": ["Riverine Wetland (Rivers, Inland beach)", "Lacustrine Wetland (Lakes)", "Marshy Wetland (Marshland)", "Human-made Wetland (Reservoir, Pond, Ditches)", "Arbor forest land (Forest land)", "Shrub forest land", "Other forest land", "Natural grassland", "Artificial grassland", "Sightseeing and special land", "Idle land", "Saline land", "Sandy land", "Bare land", "Paddy field", "Arid land (Irrigated land, Agricultural facility land)", "Orchard (Tea garden, Other gardens)", "Industrial & Mineral land (Mining land, Storage land, Port land, Hydraulic Construction land)", "Urban land (Urban, Towns, Urban residential land)", "Rural residence land (Villages)", "Traffic land (Railway land, Highway land, Rural road)"],
+        "required": false
+      },
+      {
+        "id": "comments",
+        "label": "Comments",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+  }
