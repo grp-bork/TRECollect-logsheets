@@ -1,0 +1,213 @@
+{
+    "id": "lsi_5",
+    "version": "1.0.0",
+    "name": "LSI 5",
+    "description": "Sediment Sample Description Form",
+    "fields": [
+      {
+        "id": "transect_number",
+        "label": "Transect number",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "triangle_number",
+        "label": "Triangle number",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "elevation",
+        "label": "Elevation (m)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "collection_time_start",
+        "label": "Collection time start",
+        "type": "time",
+        "required": true
+      },
+      {
+        "id": "collection_time_end",
+        "label": "Collection time end",
+        "type": "time",
+        "required": true
+      },
+      {
+        "id": "sediment_triangle_gps",
+        "label": "Sediment triangle GPS coordinates",
+        "type": "gps",
+        "required": true
+      },
+      {
+        "id": "core_a_photo",
+        "label": "Photo of core A",
+        "type": "photo",
+        "required": true
+      },
+      {
+        "id": "core_b_photo",
+        "label": "Photo of core B",
+        "type": "photo",
+        "required": true
+      },
+      {
+        "id": "core_c_photo",
+        "label": "Photo of core C",
+        "type": "photo",
+        "required": true
+      },
+      {
+        "id": "extra_pictures",
+        "label": "Extra pictures",
+        "type": "dynamic",
+        "required": false,
+        "instance_name": "Photo",
+        "subFields": [
+          {
+            "id": "photo_name",
+            "label": "Photo name",
+            "type": "text",
+            "required": false
+          },
+          {
+            "id": "extra_photo",
+            "label": "Extra photo",
+            "type": "photo",
+            "required": false
+          }
+        ]
+      },
+      {
+        "id": "porosity",
+        "label": "Porosity",
+        "type": "section"
+      },
+      {
+        "id": "tube_weight",
+        "label": "Tube weight (g)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "sample_weight",
+        "label": "Sample weight (g)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "tube_and_sample_weight",
+        "label": "Tube + sample weight (g)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "collected_samples",
+        "label": "Collected samples",
+        "type": "section"
+      },
+      {
+        "id": "sample_metabgt_replicate_1",
+        "label": "MetaBGT - replicate 1",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_metabgt_replicate_2",
+        "label": "MetaBGT - replicate 2",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_metabgt_replicate_3",
+        "label": "MetaBGT - replicate 3",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_chlorophylle",
+        "label": "Chlorophylle",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "organic_carbon",
+        "label": "Organic Carbon (TOC/DOC)",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_inorganic_pollutants",
+        "label": "Inorganic pollutants",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "imaging_replicate_1",
+        "label": "Imaging MgCl + PFA - replicate 1",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "imaging_replicate_2",
+        "label": "Imaging MgCl + PFA - replicate 2",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "imaging_replicate_3",
+        "label": "Imaging MgCl + PFA - replicate 3",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_xenobiotics",
+        "label": "Xenobiotics",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_organic_pollutants",
+        "label": "Organic pollutants",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_porosity",
+        "label": "Porosity",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_granulometry",
+        "label": "Granulometry",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_ions",
+        "label": "Ions",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_extra_material",
+        "label": "Extra material",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "comments",
+        "label": "Comments",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+  }

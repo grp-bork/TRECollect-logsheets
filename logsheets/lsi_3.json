@@ -290,8 +290,8 @@
         "required": false
       },
       {
-        "id": "sample_metals",
-        "label": "Metals",
+        "id": "sample_inorganic_pollutants",
+        "label": "Inorganic pollutants",
         "type": "barcode",
         "required": false
       },
