@@ -1,0 +1,147 @@
+{
+    "id": "lsi_14",
+    "version": "1.0.0",
+    "name": "LSI 14",
+    "description": "Site Scoring Form",
+    "fields": [
+      {
+        "id": "total_score",
+        "label": "Total score",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "site_score_section",
+        "label": "Site score",
+        "type": "section"
+      },
+      {
+        "id": "site_score",
+        "label": "Site score",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "scientific_value",
+        "label": "Scientific value",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "alignment_with_tara",
+        "label": "Alignment with TARA",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "site_total",
+        "label": "Site total",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "soil_score_section",
+        "label": "Soil score",
+        "type": "section"
+      },
+      {
+        "id": "quality_of_metadata",
+        "label": "Quality of metadata",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "technical_feasibility",
+        "label": "Technical feasibility",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "quality_of_protocols_or_plugins",
+        "label": "Quality of protocols or plugins",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "soil_total",
+        "label": "Soil total",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "sediment_score_section",
+        "label": "Sediment score",
+        "type": "section"
+      },
+      {
+        "id": "transect_setup",
+        "label": "Transect setup",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "samples_complete",
+        "label": "Samples complete",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "quality_of_protocols",
+        "label": "Quality of protocols",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "sediment_total",
+        "label": "Sediment total",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "water_score_section",
+        "label": "Water score",
+        "type": "section"
+      },
+      {
+        "id": "time_between_sampling_processing",
+        "label": "<20' between sampling/processing",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "all_samples",
+        "label": "All samples",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "time_filtration",
+        "label": "<15' filtration",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "water_total",
+        "label": "Water total",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      }
+    ]
+}
