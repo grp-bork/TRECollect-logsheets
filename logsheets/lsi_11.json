@@ -1,0 +1,148 @@
+{
+    "id": "lsi_11",
+    "version": "1.0.0",
+    "name": "LSI 11",
+    "description": "Shoreline Water Metabolomics Form",
+    "fields": [
+      {
+        "id": "mb320_mb033_section",
+        "label": "MB320 & MB033",
+        "type": "section"
+      },
+      {
+        "id": "sample_mb320_replicate_1",
+        "label": "MB320 - replicate 1",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_mb320_replicate_2",
+        "label": "MB320 - replicate 2",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_mb033_replicate_1",
+        "label": "MB033 - replicate 1",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_mb033_replicate_2",
+        "label": "MB033 - replicate 2",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "mb320_mb033_filtration_volume",
+        "label": "MB320-MB033 - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "mb320_mb033_filtration_duration",
+        "label": "MB320-MB033 - filtration duration",
+        "type": "text",
+        "mask": "MM:SS",
+        "required": false
+      },
+      {
+        "id": "mb20_section",
+        "label": "MB20",
+        "type": "section"
+      },
+      {
+        "id": "sample_mb20_replicate_1",
+        "label": "MB20",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "mb20_replicate_1_filtration_volume",
+        "label": "MB20 - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "hlb_ppl_section",
+        "label": "HLB & PPL",
+        "type": "section"
+      },
+      {
+        "id": "sample_hlb_replicate_1",
+        "label": "HLB - replicate 1",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_ppl_replicate_1",
+        "label": "PPL - replicate 1",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_hlb_replicate_2",
+        "label": "HLB - replicate 2",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_ppl_replicate_2",
+        "label": "PPL - replicate 2",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_hlb_replicate_3",
+        "label": "HLB - replicate 3",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_ppl_replicate_3",
+        "label": "PPL - replicate 3",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_hlb_blank",
+        "label": "HLB - blank",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_ppl_blank",
+        "label": "PPL - blank",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "hlb_ppl_filtration_duration",
+        "label": "HLB-PPL - filtration duration",
+        "type": "text",
+        "mask": "HH:mm:ss",
+        "required": false
+      },
+      {
+        "id": "hlb_ppl_remaining_volumes",
+        "label": "HLB-PPL - remaining volumes (L) if filtration >2h",
+        "type": "textarea",
+        "required": false
+      },
+      {
+        "id": "ph",
+        "label": "pH",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "comments",
+        "label": "Comments",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+}
