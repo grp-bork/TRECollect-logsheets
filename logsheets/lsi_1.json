@@ -38,7 +38,7 @@
         "id": "site_image",
         "label": "Sampling site layout overview",
         "type": "image_display",
-        "image": "images/site.png"
+        "image": "images/lsi_site_structure.png"
       },
       {
         "id": "site_layout",
