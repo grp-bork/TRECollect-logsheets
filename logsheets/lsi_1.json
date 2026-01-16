@@ -17,7 +17,7 @@
         "required": true
       },
       {
-        "id": "collection_time_start",
+        "id": "sampling_time_start",
         "label": "Sampling time start",
         "type": "time",
         "required": true

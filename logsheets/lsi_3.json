@@ -1,0 +1,317 @@
+{
+    "id": "lsi_3",
+    "version": "1.0.0",
+    "name": "LSI 3",
+    "description": "Soil Sample Description Form",
+    "fields": [
+      {
+        "id": "transect_number",
+        "label": "Transect number",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "square_number",
+        "label": "Square number",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "collection_time_start",
+        "label": "Collection time start",
+        "type": "time",
+        "required": true
+      },
+      {
+        "id": "collection_time_end",
+        "label": "Collection time end",
+        "type": "time",
+        "required": true
+      },
+      {
+        "id": "sampling_depth",
+        "label": "Sampling depth (cm)",
+        "type": "text",
+        "default_value": "0-20",
+        "required": true
+      },
+      {
+        "id": "soil_square_gps",
+        "label": "Soil square GPS coordinates",
+        "type": "gps",
+        "required": true
+      },
+      {
+        "id": "auger_type",
+        "label": "Auger type",
+        "type": "text",
+        "required": false
+      },
+      {
+        "id": "auger_number",
+        "label": "Auger number",
+        "type": "text",
+        "required": false
+      },
+      {
+        "id": "elevation",
+        "label": "Elevation (m)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "first_core_photo",
+        "label": "Photo of 1st core of the square",
+        "type": "photo",
+        "required": true
+      },
+      {
+        "id": "square_photo",
+        "label": "Photo of the square",
+        "type": "photo",
+        "required": false
+      },
+      {
+        "id": "water_moisture",
+        "label": "Water - moisture",
+        "type": "select",
+        "options": ["dry", "fresh", "moist (residual water on hands after handling)", "wet (water is dripping out of it)", "saturated (no soil structure)"],
+        "required": false
+      },
+      {
+        "id": "water_hydromorphic_features",
+        "label": "Water - hydromorphic features",
+        "type": "select",
+        "options": ["no sign of permanent water", "some signs of permanent water (orange or grey flecks)", "permanent saturation"],
+        "required": false
+      },
+      {
+        "id": "structure_compaction",
+        "label": "Structure - compaction",
+        "type": "select",
+        "options": ["fluffy (hole with no resistance)", "hardly compacted (hole with resistance)", "compact (no hole)", "very compact (stone hard)"],
+        "required": false
+      },
+      {
+        "id": "structure_rocks",
+        "label": "Structure - rocks",
+        "type": "select",
+        "options": ["no rocks", "few rocks", "moderate rocks", "full of rocks"],
+        "required": false
+      },
+      {
+        "id": "colour_stains",
+        "label": "Colour - stain",
+        "type": "select",
+        "options": ["no stains", "less than 10%", "10-40%", ">40%"],
+        "required": false
+      },
+      {
+        "id": "colour_organic_matter",
+        "label": "Colour - organic matter",
+        "type": "select",
+        "options": ["absence", "low (hardly see any dark colour)", "moderate (brown)", "high (dark)"],
+        "required": false
+      },
+      {
+        "id": "abundance_of_roots",
+        "label": "Abundance of roots",
+        "type": "select",
+        "options": ["no root", "few roots", "moderate roots", "full of roots"],
+        "required": false
+      },
+      {
+        "id": "root_viability",
+        "label": "Root viability",
+        "type": "select",
+        "options": ["all dead", "< 50% alive", "> 50% alive"],
+        "required": false
+      },
+      {
+        "id": "soil_texture_visual",
+        "label": "Soil Texture (Visual Selection)",
+        "type": "multiselect_image",
+        "required": false,
+        "options": [
+          {
+            "value": "tap",
+            "image": "images/roots_tap.png",
+            "label": "Tap"
+          },
+          {
+            "value": "adven",
+            "image": "images/roots_adventitious.png",
+            "label": "Adven"
+          },
+          {
+            "value": "heart",
+            "image": "images/roots_heart.png",
+            "label": "Heart"
+          },
+          {
+            "value": "flat",
+            "image": "images/roots_flat.png",
+            "label": "Flat"
+          },
+          {
+            "value": "fibrous",
+            "image": "images/roots_fibrous.png",
+            "label": "Fibrous"
+          }
+        ]
+      },
+      {
+        "id": "soil_core_colour",
+        "label": "Color present in core",
+        "type": "multiselect_image",
+        "required": false,
+        "options": [
+          {
+            "value": "black",
+            "image": "images/colours_black.png",
+            "label": "Black"
+          },
+          {
+            "value": "blue_green",
+            "image": "images/colours_blue_green.png",
+            "label": "Blue/Green"
+          },
+          {
+            "value": "brown",
+            "image": "images/colours_brown.png",
+            "label": "Brown"
+          },
+          {
+            "value": "dark_brown",
+            "image": "images/colours_dark_brown.png",
+            "label": "Dark Brown"
+          },
+          {
+            "value": "dark_grey",
+            "image": "images/colours_dark_grey.png",
+            "label": "Dark Grey"
+          },
+          {
+            "value": "dark_red",
+            "image": "images/colours_dark_red.png",
+            "label": "Dark Red"
+          },
+          {
+            "value": "light_grey",
+            "image": "images/colours_light_grey.png",
+            "label": "Light Grey"
+          },
+          {
+            "value": "orange",
+            "image": "images/colours_orange.png",
+            "label": "Orange"
+          },
+          {
+            "value": "pale_brown",
+            "image": "images/colours_pale_brown.png",
+            "label": "Pale Brown"
+          },
+          {
+            "value": "pale_yellow",
+            "image": "images/colours_pale_yellow.png",
+            "label": "Pale Yellow"
+          },
+          {
+            "value": "white",
+            "image": "images/colours_white.png",
+            "label": "White"
+          },
+          {
+            "value": "yellow",
+            "image": "images/colours_yellow.png",
+            "label": "Yellow"
+          },
+          {
+            "value": "red",
+            "image": "images/colours_red.png",
+            "label": "Red"
+          }
+        ]
+      },
+      {
+        "id": "collected_samples",
+        "label": "Collected samples",
+        "type": "section"
+      },
+      {
+        "id": "sample_metabgt_replicate_1",
+        "label": "MetaBGT - replicate 1",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_metabgt_replicate_2",
+        "label": "MetaBGT - replicate 2",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_metabgt_replicate_3",
+        "label": "MetaBGT - replicate 3",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_ions",
+        "label": "Ions",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_imaging",
+        "label": "Imaging MgCl + PFA",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_xenobiotics",
+        "label": "Xenobiotics",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_dry_chemistry",
+        "label": "Dry Chemistry",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_organic_carbon",
+        "label": "Organic Carbon",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_metals",
+        "label": "Metals",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_roots",
+        "label": "Roots",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_extra_material",
+        "label": "Extra material",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "comments",
+        "label": "Comments",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+  }
