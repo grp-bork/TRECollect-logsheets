@@ -1,0 +1,82 @@
+{
+    "id": "lsi_9",
+    "version": "1.0.0",
+    "name": "LSI 9",
+    "description": "Shoreline Water Single Cell Ecology Form",
+    "fields": [
+      {
+        "id": "sample_fm20_replicate_1",
+        "label": "FM20 - replicate 1",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_fm20_replicate_2",
+        "label": "FM20 - replicate 2",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_e20_replicate_1",
+        "label": "E20 - replicate 1",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_e20_replicate_2",
+        "label": "E20 - replicate 2",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_fm5_replicate_1",
+        "label": "FM5 - replicate 1",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_fm5_replicate_2",
+        "label": "FM5 - replicate 2",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_sg5_replicate_1",
+        "label": "SG5 - replicate 1",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_sg5_replicate_2",
+        "label": "SG5 - replicate 2",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_sg5_replicate_3",
+        "label": "SG5 - replicate 3",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "fm5_sg5_filtration_volume",
+        "label": "FM5-SG5 filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "fm5_sg5_filtration_duration",
+        "label": "FM5-SG5 filtration duration",
+        "type": "text",
+        "mask": "MM:SS",
+        "required": false
+      },
+      {
+        "id": "comments",
+        "label": "Comments",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+}
