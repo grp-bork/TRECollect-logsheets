@@ -1,0 +1,72 @@
+{
+    "id": "lsi_6",
+    "version": "1.0.0",
+    "name": "LSI 6",
+    "description": "Drying Analysis Form",
+    "fields": [
+      {
+        "id": "sampling_depth",
+        "label": "Sampling depth (cm)",
+        "type": "text",
+        "default_value": "0-20",
+        "required": true
+      },
+      {
+        "id": "drying_date_start",
+        "label": "Drying date start",
+        "type": "date",
+        "required": true
+      },
+      {
+        "id": "drying_time_start",
+        "label": "Drying time start",
+        "type": "time",
+        "required": true
+      },
+      {
+        "id": "drying_date_end",
+        "label": "Drying date end",
+        "type": "date",
+        "required": true
+      },
+      {
+        "id": "drying_time_end",
+        "label": "Drying time end",
+        "type": "time",
+        "required": true
+      },
+      {
+        "id": "soil_transect_1",
+        "label": "Soil transect 1",
+        "type": "table",
+        "rows": ["Wet weight (g)", "Dry weight (g)"],
+        "columns": ["Square 1", "Square 2", "Square 3"],
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "soil_transect_2",
+        "label": "Soil transect 2",
+        "type": "table",
+        "rows": ["Wet weight (g)", "Dry weight (g)"],
+        "columns": ["Square 1", "Square 2", "Square 3"],
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "soil_transect_3",
+        "label": "Soil transect 3",
+        "type": "table",
+        "rows": ["Wet weight (g)", "Dry weight (g)"],
+        "columns": ["Square 1", "Square 2", "Square 3"],
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "comments",
+        "label": "Comments",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+  }
