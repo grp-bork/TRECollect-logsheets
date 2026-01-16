@@ -26,7 +26,7 @@
         "id": "s20_replicate_1_filtration_duration",
         "label": "S20 (1) - filtration duration",
         "type": "text",
-        "mask": "MM:SS",
+        "mask": "mm:ss",
         "required": false
       },
       {
@@ -46,7 +46,7 @@
         "id": "s20_replicate_2_filtration_duration",
         "label": "S20 (2) - filtration duration",
         "type": "text",
-        "mask": "MM:SS",
+        "mask": "mm:ss",
         "required": false
       },
       {
@@ -77,7 +77,7 @@
         "id": "s320_s023_replicate_1_filtration_duration",
         "label": "S320-S023 (1) - filtration duration",
         "type": "text",
-        "mask": "MM:SS",
+        "mask": "mm:ss",
         "required": false
       },
       {
@@ -108,7 +108,7 @@
         "id": "s320_s023_replicate_2_filtration_duration",
         "label": "S320-S023 (2) - filtration duration",
         "type": "text",
-        "mask": "MM:SS",
+        "mask": "mm:ss",
         "required": false
       },
       {
@@ -133,7 +133,7 @@
         "id": "s02_replicate_1_filtration_duration",
         "label": "S<02 (1) - filtration duration",
         "type": "text",
-        "mask": "MM:SS",
+        "mask": "mm:ss",
         "required": false
       },
       {
@@ -153,7 +153,7 @@
         "id": "s02_replicate_2_filtration_duration",
         "label": "S<02 (2) - filtration duration",
         "type": "text",
-        "mask": "MM:SS",
+        "mask": "mm:ss",
         "required": false
       },
       {

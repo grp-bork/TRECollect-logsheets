@@ -69,7 +69,7 @@
         "id": "fm5_sg5_filtration_duration",
         "label": "FM5-SG5 filtration duration",
         "type": "text",
-        "mask": "MM:SS",
+        "mask": "mm:ss",
         "required": false
       },
       {

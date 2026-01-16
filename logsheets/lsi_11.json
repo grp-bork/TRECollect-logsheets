@@ -44,7 +44,7 @@
         "id": "mb320_mb033_filtration_duration",
         "label": "MB320-MB033 - filtration duration",
         "type": "text",
-        "mask": "MM:SS",
+        "mask": "mm:ss",
         "required": false
       },
       {
