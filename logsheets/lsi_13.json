@@ -1,0 +1,73 @@
+{
+    "id": "lsi_13",
+    "version": "1.0.0",
+    "name": "LSI 13",
+    "description": "Leaf Sample Description Form",
+    "fields": [
+      {
+        "id": "transect_number",
+        "label": "Transect number",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "transect_type",
+        "label": "Transect type",
+        "type": "select",
+        "options": ["soil", "sediment"],
+        "required": true
+      },
+      {
+        "id": "leaf_samples",
+        "label": "Collected leaf samples",
+        "type": "dynamic",
+        "required": true,
+        "instance_name": "Sample",
+        "subFields": [
+            {
+                "id": "sample_rt",
+                "label": "Sample (RT)",
+                "type": "barcode",
+                "required": false
+            },
+            {
+                "id": "sample_frozen",
+                "label": "Sample (-80°C)",
+                "type": "barcode",
+                "required": false
+            },
+            {
+                "id": "scientific_name",
+                "label": "Scientific name",
+                "type": "text",
+                "required": false
+            },
+            {
+                "id": "photo_of_plant",
+                "label": "Photo of the plant",
+                "type": "photo",
+                "required": false
+            },
+            {
+                "id": "photo_of_leaf",
+                "label": "Photo of the leaf",
+                "type": "photo",
+                "required": false
+            },
+            {
+                "id": "extra_photo",
+                "label": "Extra photo",
+                "type": "photo",
+                "required": false
+            }
+        ]
+      },
+      {
+        "id": "comments",
+        "label": "Comments",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+}
