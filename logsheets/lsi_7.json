@@ -1,0 +1,114 @@
+{
+    "id": "lsi_7",
+    "version": "1.0.0",
+    "name": "LSI 7",
+    "description": "Soil Mutlimeter Probe Form",
+    "fields": [
+      {
+        "id": "sampling_depth",
+        "label": "Sampling depth (cm)",
+        "type": "text",
+        "default_value": "0-20",
+        "required": true
+      },
+      {
+        "id": "measurement_time_start",
+        "label": "Measurement time start",
+        "type": "time",
+        "required": true
+      },
+      {
+        "id": "measurement_time_end",
+        "label": "Measurement time end",
+        "type": "time",
+        "required": true
+      },
+      {
+        "id": "atmosphere_sensor",
+        "label": "Atmosphere sensor",
+        "type": "table",
+        "rows": ["Outside temperature (°C)", "Humidity (%)", "Air pressure (hPa)"],
+        "columns": ["Sediment", "Soil transect 1", "Soil transect 2", "Soil transect 3"],
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "geiger_counter",
+        "label": "Geiger counter",
+        "type": "table",
+        "rows": ["Radiation (uSv/h)"],
+        "columns": ["Sediment", "Soil transect 1", "Soil transect 2", "Soil transect 3"],
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "soil_transect_1",
+        "label": "Soil transect 1",
+        "type": "section"
+      },
+      {
+        "id": "multimeter_transect_1",
+        "label": "Multimeter - Transect 1",
+        "type": "table",
+        "rows": ["Salinity (g/L)", "Soil moisture (% vol)", "Soil Temp (°C)", "pH", "Conductivity (mS/cm)", "Light (lux)"],
+        "columns": ["Sample 1", "Sample 2", "Sample 3"],
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "ftir_scan_performed_soil_transect_1",
+        "label": "FTIR scan performed - soil transect 1",
+        "type": "multiselect",
+        "options": ["Sample 1", "Sample 2", "Sample 3"],
+        "required": true
+      },
+      {
+        "id": "soil_transect_2",
+        "label": "Soil transect 2",
+        "type": "section"
+      },
+      {
+        "id": "multimeter_transect_2",
+        "label": "Multimeter - Transect 2",
+        "type": "table",
+        "rows": ["Salinity (g/L)", "Soil moisture (% vol)", "Soil Temp (°C)", "pH", "Conductivity (mS/cm)", "Light (lux)"],
+        "columns": ["Sample 1", "Sample 2", "Sample 3"],
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "ftir_scan_performed_soil_transect_2",
+        "label": "FTIR scan performed - soil transect 2",
+        "type": "multiselect",
+        "options": ["Sample 1", "Sample 2", "Sample 3"],
+        "required": true
+      },
+      {
+        "id": "soil_transect_3",
+        "label": "Soil transect 3",
+        "type": "section"
+      },
+      {
+        "id": "multimeter_transect_3",
+        "label": "Multimeter - Transect 3",
+        "type": "table",
+        "rows": ["Salinity (g/L)", "Soil moisture (% vol)", "Soil Temp (°C)", "pH", "Conductivity (mS/cm)", "Light (lux)"],
+        "columns": ["Sample 1", "Sample 2", "Sample 3"],
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "ftir_scan_performed_soil_transect_3",
+        "label": "FTIR scan performed - soil transect 3",
+        "type": "multiselect",
+        "options": ["Sample 1", "Sample 2", "Sample 3"],
+        "required": true
+      },
+      {
+        "id": "comments",
+        "label": "Comments",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+  }
