@@ -1,0 +1,115 @@
+{
+    "id": "lsi_8",
+    "version": "1.0.0",
+    "name": "LSI 8",
+    "description": "Shoreline Water CTD and Sampling Event Form",
+    "fields": [
+      {
+        "id": "left_side_photo",
+        "label": "Left side of the beach",
+        "type": "photo",
+        "required": true
+      },
+      {
+        "id": "water_photo",
+        "label": "Photo of the water",
+        "type": "photo",
+        "required": true
+      },
+      {
+        "id": "right_side_photo",
+        "label": "Right side of the beach",
+        "type": "photo",
+        "required": true
+      },
+      {
+        "id": "ctd_section",
+        "label": "CTD",
+        "type": "section"
+      },
+      {
+        "id": "ctd_time_start",
+        "label": "CTD start time",
+        "type": "time",
+        "required": false
+      },
+      {
+        "id": "ctd_time_end",
+        "label": "CTD end time",
+        "type": "time",
+        "required": false
+      },
+      {
+        "id": "ctd_gps",
+        "label": "CTD GPS coordinates",
+        "type": "gps",
+        "required": false
+      },
+      {
+        "id": "ctd_deployment",
+        "label": "CTD",
+        "type": "multiselect",
+        "options": ["deployed", "retrieved", "not deployed"],
+        "required": false
+      },
+      {
+        "id": "mte_collected",
+        "label": "MTE",
+        "type": "multiselect",
+        "options": ["collected"],
+        "required": false
+      },
+      {
+        "id": "mte_sample",
+        "label": "MTE sample",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "water_collection_section",
+        "label": "Water collection",
+        "type": "section"
+      },
+      {
+        "id": "water_collection_time_start",
+        "label": "Water collection start time",
+        "type": "time",
+        "required": true
+      },
+      {
+        "id": "water_collection_time_end",
+        "label": "Water collection end time",
+        "type": "time",
+        "required": true
+      },
+      {
+        "id": "water_collection_gps",
+        "label": "Water collection GPS coordinates",
+        "type": "gps",
+        "required": true
+      },
+      {
+        "id": "water_processing_section",
+        "label": "Water processing",
+        "type": "section"
+      },
+      {
+        "id": "water_processing_time_start",
+        "label": "Water processing start time",
+        "type": "time",
+        "required": true
+      },
+      {
+        "id": "water_processing_time_end",
+        "label": "Water processing end time",
+        "type": "time",
+        "required": true
+      },
+      {
+        "id": "comments",
+        "label": "Comments",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+}
