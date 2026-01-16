@@ -1,0 +1,129 @@
+{
+    "id": "lsi_4",
+    "version": "1.0.0",
+    "name": "LSI 4",
+    "description": "Sediment Transect Description Form",
+    "fields": [
+      {
+        "id": "transect_number",
+        "label": "Transect number",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "transect_photo",
+        "label": "Photo of the transect",
+        "type": "photo",
+        "required": true
+      },
+      {
+        "id": "soil_chemistry_analysis",
+        "label": "Photo of the triangle",
+        "type": "dynamic",
+        "required": false,
+        "instance_name": "Triangle photo",
+        "subFields": [
+          {
+            "id": "triangle_number",
+            "label": "Triangle number",
+            "type": "text",
+            "inputType": "number",
+            "required": false
+          },
+          {
+            "id": "triangle_photo",
+            "label": "Photo of the triangle",
+            "type": "photo",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "label": "Comment",
+            "type": "text",
+            "required": false
+          }
+        ]
+      },
+      {
+        "id": "fauna",
+        "label": "Fauna",
+        "type": "table",
+        "rows": ["Jellyfish", "Crustations", "Turtles", "Seals", "Birds", "Fish", "Mollusc", "Echinodermata", "Annelid"],
+        "columns": ["Alive", "Dead"],
+        "inputType": "boolean",
+        "required": false
+      },
+      {
+        "id": "flora",
+        "label": "Flora",
+        "type": "multiselect",
+        "options": ["beach grass", "beach vines", "macroalge", "sea kale", "trees"],
+        "required": false
+      },
+      {
+        "id": "sediment_type",
+        "label": "Sediment type",
+        "type": "multiselect",
+        "options": ["sand", "rock", "clay", "mud", "silt"],
+        "required": false
+      },
+      {
+        "id": "sediment_topology",
+        "label": "Sediment Topology",
+        "type": "multiselect",
+        "options": ["flat", "inclined", "eroded", "interrupted"],
+        "required": false
+      },
+      {
+        "id": "sediment_colour",
+        "label": "Sediment Colour",
+        "type": "multiselect",
+        "options": ["dark brown", "light brown", "black", "yellow", "white", "red"],
+        "required": false
+      },
+      {
+        "id": "water_colour",
+        "label": "Water Colour",
+        "type": "multiselect",
+        "options": ["dark brown", "light brown", "blue", "blue-green", "green", "red"],
+        "required": false
+      },
+      {
+        "id": "waves",
+        "label": "Waves",
+        "type": "multiselect",
+        "options": ["calm", "smooth", "slight", "moderate", "rough", "high"],
+        "required": false
+      },
+      {
+        "id": "core_colour",
+        "label": "Core Colour",
+        "type": "multiselect",
+        "options": ["dark_brown", "light_brown", "black", "yellow", "white", "orange"],
+        "required": false
+      },
+      {
+        "id": "visible_anoxic_layer",
+        "label": "Visible anoxic layer",
+        "type": "select",
+        "options": ["Above 5 cm", "Below 5 cm", "Not seen"],
+        "required": false
+      },
+      {
+        "id": "anthropogenic_pressure",
+        "label": "Qualitative assessment of anthropogenic pressure",
+        "type": "table",
+        "rows": ["Glass", "People", "Vehicles", "Rubbish", "Cigarette butts"],
+        "columns": ["On beach", "In ocean"],
+        "inputType": "boolean",
+        "required": false
+      },
+      {
+        "id": "comments",
+        "label": "Comments",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+  }
