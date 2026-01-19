@@ -1,0 +1,17 @@
+{
+    "id": "aml",
+    "version": "1.0.0",
+    "team": "AML",
+    "name": "AML - placeholder",
+    "sections": [
+      {
+        "forms": [
+          {
+            "form_id": "lsi_14",
+            "title": "placeholder",
+            "mandatory": false
+          }
+        ]
+      }
+    ]
+}
