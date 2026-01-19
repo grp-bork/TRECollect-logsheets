@@ -189,7 +189,7 @@
             "mandatory": false,
             "dynamic":
               {
-                "button_name": "Add extra square"
+                "button_name": "Add extra leaves"
               }
           }
         ]

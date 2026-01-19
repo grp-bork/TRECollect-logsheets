@@ -1,0 +1,124 @@
+{
+    "id": "lsi_sediment",
+    "version": "1.0.0",
+    "team": "LSI",
+    "name": "Sediment",
+    "sections": [
+      {
+        "name": "Transects",
+        "forms": [
+          {
+            "form_id": "lsi_4",
+            "title": "Sediment transect 1",
+            "mandatory": true,
+            "prefills": [
+              {
+                "widget_id": "transect_number",
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "form_id": "lsi_5",
+            "title": "Sediment transect 1 - triangle 1",
+            "mandatory": true,
+            "prefills": [
+              {
+                "widget_id": "transect_number",
+                "value": "1"
+              },
+              {
+                "widget_id": "triangle_number",
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "form_id": "lsi_5",
+            "title": "Sediment transect 1 - triangle 2",
+            "mandatory": true,
+            "prefills": [
+              {
+                "widget_id": "transect_number",
+                "value": "1"
+              },
+              {
+                "widget_id": "triangle_number",
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "form_id": "lsi_5",
+            "title": "Sediment transect 1 - triangle 3",
+            "mandatory": true,
+            "prefills": [
+              {
+                "widget_id": "transect_number",
+                "value": "1"
+              },
+              {
+                "widget_id": "triangle_number",
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "form_id": "lsi_13",
+            "title": "Sediment transect 1 - leaves",
+            "mandatory": true,
+            "prefills": [
+              {
+                "widget_id": "transect_number",
+                "value": "1"
+              },
+              {
+                "widget_id": "transect_type",
+                "value": "sediment"
+              }
+            ]
+          },
+          {
+            "form_id": "horizontal_line"
+          },
+          {
+            "form_id": "lsi_4",
+            "title": "Extra sediment transect",
+            "mandatory": false,
+            "dynamic":
+              {
+                "button_name": "Add extra transect"
+              }
+          },
+          {
+            "form_id": "lsi_5",
+            "title": "Extra sediment triangle",
+            "mandatory": false,
+            "dynamic":
+              {
+                "button_name": "Add extra triangle"
+              }
+          },
+          {
+            "form_id": "lsi_13",
+            "title": "Extra soil leaves",
+            "mandatory": false,
+            "dynamic":
+              {
+                "button_name": "Add extra leaves"
+              }
+          }
+        ]
+      },
+      {
+        "name": "Others",
+        "forms": [
+          {
+            "form_id": "lsi_14",
+            "title": "LSI 14 - scoring",
+            "mandatory": true
+          }
+        ]
+      }
+    ]
+}
