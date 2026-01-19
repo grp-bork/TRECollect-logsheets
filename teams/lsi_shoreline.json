@@ -1,0 +1,37 @@
+{
+    "id": "lsi_shoreline",
+    "version": "1.0.0",
+    "team": "LSI",
+    "name": "Shoreline",
+    "sections": [
+      {
+        "forms": [
+          {
+            "form_id": "lsi_8",
+            "title": "LSI 8",
+            "mandatory": true
+          },
+          {
+            "form_id": "lsi_9",
+            "title": "LSI 9",
+            "mandatory": true
+          },
+          {
+            "form_id": "lsi_10",
+            "title": "LSI 10",
+            "mandatory": true
+          },
+          {
+            "form_id": "lsi_11",
+            "title": "LSI 11",
+            "mandatory": true
+          },
+          {
+            "form_id": "lsi_12",
+            "title": "LSI 12",
+            "mandatory": true
+          }
+        ]
+      }
+    ]
+}
