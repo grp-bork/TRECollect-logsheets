@@ -4,3 +4,6 @@
 .cursorindexingignore
 
 .specstory/
+
+# ownCloud config (contains access token)
+owncloud_config.json
