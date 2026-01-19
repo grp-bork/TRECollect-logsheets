@@ -46,7 +46,7 @@
           {
             "form_id": "lsi_3",
             "title": "Soil transect 1 - square 2",
-            "mandatory": false,
+            "mandatory": true,
             "prefills": [
               {
                 "widget_id": "transect_number",
@@ -61,7 +61,7 @@
           {
             "form_id": "lsi_3",
             "title": "Soil transect 1 - square 3",
-            "mandatory": false,
+            "mandatory": true,
             "prefills": [
               {
                 "widget_id": "transect_number",
@@ -76,7 +76,7 @@
           {
             "form_id": "lsi_13",
             "title": "Soil transect 1 - leaves",
-            "mandatory": false,
+            "mandatory": true,
             "prefills": [
               {
                 "widget_id": "transect_number",
@@ -94,7 +94,7 @@
           {
             "form_id": "lsi_2",
             "title": "Soil transect 2",
-            "mandatory": false,
+            "mandatory": true,
             "prefills": [
               {
                 "widget_id": "transect_number",
@@ -105,7 +105,7 @@
           {
             "form_id": "lsi_3",
             "title": "Soil transect 2 - square 1",
-            "mandatory": false,
+            "mandatory": true,
             "prefills": [
               {
                 "widget_id": "transect_number",
@@ -120,7 +120,7 @@
           {
             "form_id": "lsi_3",
             "title": "Soil transect 2 - square 2",
-            "mandatory": false,
+            "mandatory": true,
             "prefills": [
               {
                 "widget_id": "transect_number",
@@ -135,7 +135,7 @@
           {
             "form_id": "lsi_3",
             "title": "Soil transect 2 - Square 3",
-            "mandatory": false,
+            "mandatory": true,
             "prefills": [
               {
                 "widget_id": "transect_number",
@@ -150,7 +150,7 @@
           {
             "form_id": "lsi_13",
             "title": "Soil transect 2 - leaves",
-            "mandatory": false,
+            "mandatory": true,
             "prefills": [
               {
                 "widget_id": "transect_number",
@@ -200,17 +200,17 @@
           {
             "form_id": "lsi_6",
             "title": "LSI 6 - drying analysis",
-            "mandatory": false
+            "mandatory": true
           },
           {
             "form_id": "lsi_7",
             "title": "LSI 7 - mutlimeter probe",
-            "mandatory": false
+            "mandatory": true
           },
           {
             "form_id": "lsi_14",
             "title": "LSI 14 - scoring",
-            "mandatory": false
+            "mandatory": true
           }
         ]
       }
