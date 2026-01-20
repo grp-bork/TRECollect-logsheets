@@ -1,0 +1,121 @@
+{
+    "id": "aml_env_event",
+    "version": "1.0.0",
+    "name": "AML Environment Event",
+    "description": "A single environment event form for AML",
+    "fields": [
+      {
+        "id": "envinronmental_event_id",
+        "label": "Environmental event ID",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "event_date_start",
+        "label": "Event date start",
+        "type": "date",
+        "required": true
+      },
+      {
+        "id": "event_time_start",
+        "label": "Event time start",
+        "type": "time",
+        "required": true
+      },
+      {
+        "id": "event_location",
+        "label": "Event GPS coordinates",
+        "type": "gps",
+        "required": true
+      },
+      {
+        "id": "temperature",
+        "label": "External temperature (°C)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "weather_conditions",
+        "label": "Weather conditions",
+        "type": "select",
+        "options": ["Sunny", "Windy", "Rainy", "Foggy"],
+        "required": false
+      },
+      {
+        "id": "sampling_depth",
+        "label": "Sampling depth (m)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "samplers",
+        "label": "Samplers",
+        "type": "text",
+        "required": false
+      },
+      {
+        "id": "nets",
+        "label": "Collected nets",
+        "type": "dynamic",
+        "required": false,
+        "instance_name": "Net",
+        "subFields": [
+            {
+                "id": "net_size",
+                "label": "Net size (μm)",
+                "type": "select",
+                "options": ["5", "10", "20", "150"],
+                "required": false
+            },
+            {
+                "id": "net_size_other",
+                "label": "Net size - other (μm)",
+                "type": "text",
+                "inputType": "number",
+                "required": false
+            },
+            {
+                "id": "tow_duration",
+                "label": "Tow duration (min)",
+                "type": "text",
+                "inputType": "number",
+                "required": false
+            },
+            {
+                "id": "sieve_size",
+                "label": "Sieve(s) size (μm)",
+                "type": "text",
+                "inputType": "number",
+                "required": false
+            },
+            {
+                "id": "sampling_weight",
+                "label": "Sampling weight (kg)",
+                "type": "text",
+                "inputType": "number",
+                "required": false
+            },
+            {
+                "id": "project",
+                "label": "Project",
+                "type": "text",
+                "required": false
+            },
+            {
+                "id": "bottle_ids",
+                "label": "Bottle IDs",
+                "type": "text",
+                "required": false
+            }
+        ]
+      },
+      {
+        "id": "comments",
+        "label": "Comments",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+  }
