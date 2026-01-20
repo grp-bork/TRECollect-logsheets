@@ -1,0 +1,58 @@
+{
+    "id": "aml_mesocosm_tank",
+    "version": "1.0.0",
+    "name": "AML Mesocosm Tank",
+    "description": "A single mesocosm tank form for AML",
+    "fields": [
+      {
+        "id": "envinronmental_event_id",
+        "label": "Environmental event ID",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "tank_id",
+        "label": "Tank ID",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "experiment_id",
+        "label": "Experiment ID",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "experiment_date_start",
+        "label": "Experiment date start",
+        "type": "date",
+        "required": true
+      },
+      {
+        "id": "experiment_time_start",
+        "label": "Experiment time start",
+        "type": "time",
+        "required": true
+      },
+      {
+        "id": "tank_volumne",
+        "label": "Tank volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "temperature",
+        "label": "Temperature (°C)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "comments",
+        "label": "Comments",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+  }
