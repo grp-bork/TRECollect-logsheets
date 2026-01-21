@@ -49,17 +49,23 @@ def get_git_changed_files() -> Tuple[List[str], List[str]]:
         )
         branch_name = result.stdout.strip()
         
-        # Compare against the remote base branch to catch all commits in the push
-        # This shows all changes that are in HEAD but not in origin/branch
+        # Get all changed/modified files (including new files added)
         result = subprocess.run(
             ["git", "diff", "--name-only", "--diff-filter=ACMR", f"origin/{branch_name}...HEAD"],
             capture_output=True,
             text=True,
             check=True
         )
-        
         changed = [f.strip() for f in result.stdout.strip().split('\n') if f.strip()]
-        new = []
+        
+        # Get files that are new (Added) vs modified (Modified)
+        result = subprocess.run(
+            ["git", "diff", "--name-only", "--diff-filter=A", f"origin/{branch_name}...HEAD"],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        new = [f.strip() for f in result.stdout.strip().split('\n') if f.strip()]
     else:
         # Get current branch and try to compare against remote tracking branch
         try:
@@ -158,18 +164,30 @@ def upload_file_to_owncloud(local_path: str, remote_path: str, access_token: str
 
 
 def create_directory(remote_path: str, access_token: str):
-    """Create a directory on ownCloud using WebDAV MKCOL request."""
-    url = f"{OWNCLOUD_BASE_URL}/{remote_path}"
+    """Create a directory on ownCloud using WebDAV MKCOL request.
+    Creates parent directories recursively if needed."""
+    if not remote_path:
+        return
     
-    # Create directory (405 means already exists, which is fine)
-    response = requests.request(
-        "MKCOL",
-        url,
-        auth=HTTPBasicAuth(access_token, ''),
-        timeout=10
-    )
-    if response.status_code not in [201, 405]:
-        response.raise_for_status()
+    # Split path and create each level
+    parts = remote_path.strip('/').split('/')
+    current_path = ""
+    
+    for part in parts:
+        if not part:
+            continue
+        current_path = f"{current_path}/{part}" if current_path else part
+        url = f"{OWNCLOUD_BASE_URL}/{current_path}"
+        
+        # Create directory (405 means already exists, which is fine)
+        response = requests.request(
+            "MKCOL",
+            url,
+            auth=HTTPBasicAuth(access_token, ''),
+            timeout=10
+        )
+        if response.status_code not in [201, 405]:
+            response.raise_for_status()
 
 
 def process_logsheet(file_path: str, access_token: str):
@@ -223,6 +241,15 @@ def main():
     print(f"  - Logsheets: {len(relevant_json['logsheets'])}")
     print(f"  - Teams: {len(relevant_json['teams'])}")
     print(f"  - Images: {len(relevant_images['images'])}")
+    
+    # Show which files are new vs changed
+    new_json = filter_relevant_files(new_files)
+    if new_json["logsheets"] or new_json["teams"]:
+        print(f"\nNew files detected:")
+        if new_json["logsheets"]:
+            print(f"  - New logsheets: {', '.join(new_json['logsheets'])}")
+        if new_json["teams"]:
+            print(f"  - New teams: {', '.join(new_json['teams'])}")
     print()
     
     for file_path in relevant_json["logsheets"]:
