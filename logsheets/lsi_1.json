@@ -1,6 +1,6 @@
 {
     "id": "lsi_1",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "LSI 1",
     "description": "Site Description Form",
     "fields": [
@@ -14,12 +14,14 @@
         "id": "sampling_date_start",
         "label": "Sampling date start",
         "type": "date",
+        "default_value": "now",
         "required": true
       },
       {
         "id": "sampling_time_start",
         "label": "Sampling time start",
         "type": "time",
+        "default_value": "now",
         "required": true
       },
       {
