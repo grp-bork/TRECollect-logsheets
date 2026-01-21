@@ -2,14 +2,69 @@
     "id": "aml",
     "version": "1.0.0",
     "team": "AML",
-    "name": "AML - placeholder",
+    "name": "AML default",
     "sections": [
       {
+        "name:": "Events",
         "forms": [
           {
-            "form_id": "lsi_14",
-            "title": "placeholder",
-            "mandatory": false
+            "form_id": "aml_env_event",
+            "title": "AML Environment Event",
+            "mandatory": false,
+            "dynamic":
+              {
+                "button_name": "Add event"
+              }
+          },
+          {
+            "form_id": "aml_mesocosm_event",
+            "title": "AML Mesocosm Event",
+            "mandatory": false,
+            "dynamic":
+              {
+                "button_name": "Add event"
+              }
+          },
+          {
+            "form_id": "aml_mesocosm_tank",
+            "title": "AML Mesocosm Tank",
+            "mandatory": false,
+            "dynamic":
+              {
+                "button_name": "Add event"
+              }
+          }
+        ]
+      },
+      {
+        "name:": "Bottles",
+        "forms": [
+          {
+            "form_id": "aml_bottle_cf",
+            "title": "AML Bottle CF",
+            "mandatory": false,
+            "dynamic":
+              {
+                "button_name": "Add bottle"
+              }
+          },
+          {
+            "form_id": "aml_bottle_hpf",
+            "title": "AML Bottle HPF",
+            "mandatory": false,
+            "dynamic":
+              {
+                "button_name": "Add bottle"
+              }
+          },
+          {
+            "form_id": "aml_bottle_metabgt",
+            "title": "AML Bottle MetaBGT",
+            "mandatory": false,
+            "dynamic":
+              {
+                "button_name": "Add bottle"
+              }
           }
         ]
       }
