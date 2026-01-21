@@ -8,13 +8,13 @@
         "id": "envinronmental_event_id",
         "label": "Environmental event ID",
         "type": "text",
-        "required": true
+        "required": false
       },
       {
         "id": "mesocosm_event_id",
         "label": "Mesocosm event ID",
         "type": "text",
-        "required": true
+        "required": false
       },
       {
         "id": "bottle_id",

@@ -1,8 +1,8 @@
 {
-    "id": "aml_bottle_cf",
+    "id": "aml_bottle_metabgt",
     "version": "1.0.0",
-    "name": "AML Bottle CF",
-    "description": "A single bottle CF form for AML",
+    "name": "AML Bottle MetaBGT",
+    "description": "A single bottle MetaBGT form for AML",
     "fields": [
       {
         "id": "envinronmental_event_id",
@@ -68,6 +68,13 @@
                 "required": false
             },
             {
+                "id": "volume_filtered_for_sample",
+                "label": "Volume filtered (mL)",
+                "type": "text",
+                "inputType": "number",
+                "required": false
+            },
+            {
                 "id": "copas_sorted",
                 "label": "COPAS sorted",
                 "type": "select",
@@ -79,6 +86,12 @@
                 "label": "Sample ID (barcode)",
                 "type": "barcode",
                 "required": true
+            },
+            {
+                "id": "box_id",
+                "label": "Box ID",
+                "type": "text",
+                "required": false
             },
             {
                 "id": "sample_comment",
