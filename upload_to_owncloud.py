@@ -40,18 +40,47 @@ def get_git_changed_files() -> Tuple[List[str], List[str]]:
     is_ci = os.environ.get("CI") == "true"
     
     if is_ci:
-        # Get the current branch name
-        result = subprocess.run(
-            ["git", "rev-parse", "--abbrev-ref", "HEAD"],
-            capture_output=True,
-            text=True,
-            check=True
-        )
-        branch_name = result.stdout.strip()
+        # In CI, use GitHub event data if available (most reliable)
+        github_before = os.environ.get("GITHUB_BEFORE")
+        github_after = os.environ.get("GITHUB_AFTER")
+        
+        if github_before and github_after and github_before != "0000000000000000000000000000000000000000":
+            # Use the before/after commits from GitHub event (most reliable)
+            base_ref = github_before
+            head_ref = github_after
+            print(f"Using GitHub event data: comparing {base_ref[:7]}..{head_ref[:7]}")
+        else:
+            # Fallback: compare with origin/branch
+            github_ref = os.environ.get("GITHUB_REF", "")
+            if github_ref.startswith("refs/heads/"):
+                branch_name = github_ref.replace("refs/heads/", "")
+            else:
+                # Fallback: try to get branch name from git
+                result = subprocess.run(
+                    ["git", "rev-parse", "--abbrev-ref", "HEAD"],
+                    capture_output=True,
+                    text=True,
+                    check=True
+                )
+                branch_name = result.stdout.strip()
+            
+            base_ref = f"origin/{branch_name}"
+            head_ref = "HEAD"
+            
+            # Verify the base ref exists
+            result = subprocess.run(
+                ["git", "rev-parse", "--verify", base_ref],
+                capture_output=True,
+                text=True
+            )
+            if result.returncode != 0:
+                # If origin/branch doesn't exist, compare with HEAD~1 (previous commit)
+                print(f"Warning: {base_ref} not found, comparing with HEAD~1", file=sys.stderr)
+                base_ref = "HEAD~1"
         
         # Get all changed/modified files (including new files added)
         result = subprocess.run(
-            ["git", "diff", "--name-only", "--diff-filter=ACMR", f"origin/{branch_name}...HEAD"],
+            ["git", "diff", "--name-only", "--diff-filter=ACMR", base_ref, head_ref],
             capture_output=True,
             text=True,
             check=True
@@ -60,7 +89,25 @@ def get_git_changed_files() -> Tuple[List[str], List[str]]:
         
         # Get files that are new (Added) vs modified (Modified)
         result = subprocess.run(
-            ["git", "diff", "--name-only", "--diff-filter=A", f"origin/{branch_name}...HEAD"],
+            ["git", "diff", "--name-only", "--diff-filter=A", base_ref, head_ref],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        new = [f.strip() for f in result.stdout.strip().split('\n') if f.strip()]
+        
+        # Get all changed/modified files (including new files added)
+        result = subprocess.run(
+            ["git", "diff", "--name-only", "--diff-filter=ACMR", base_ref, "HEAD"],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        changed = [f.strip() for f in result.stdout.strip().split('\n') if f.strip()]
+        
+        # Get files that are new (Added) vs modified (Modified)
+        result = subprocess.run(
+            ["git", "diff", "--name-only", "--diff-filter=A", base_ref, "HEAD"],
             capture_output=True,
             text=True,
             check=True

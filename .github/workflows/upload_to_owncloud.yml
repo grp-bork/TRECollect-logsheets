@@ -24,7 +24,11 @@ jobs:
       - name: Fetch base branch
         run: |
           BRANCH_NAME=${GITHUB_REF#refs/heads/}
+          echo "Branch name: $BRANCH_NAME"
           git fetch origin $BRANCH_NAME
+          git branch -a
+          echo "HEAD commit: $(git rev-parse HEAD)"
+          echo "origin/$BRANCH_NAME commit: $(git rev-parse origin/$BRANCH_NAME 2>/dev/null || echo 'not found')"
     
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -39,5 +43,7 @@ jobs:
       - name: Upload to ownCloud
         env:
           OWNCLOUD_ACCESS_TOKEN: ${{ secrets.OWNCLOUD_ACCESS_TOKEN }}
+          GITHUB_BEFORE: ${{ github.event.before }}
+          GITHUB_AFTER: ${{ github.event.after }}
         run: |
           python upload_to_owncloud.py
