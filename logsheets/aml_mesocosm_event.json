@@ -1,0 +1,73 @@
+{
+    "id": "aml_mesocosm_event",
+    "version": "1.0.0",
+    "name": "AML Mesocosm Event",
+    "description": "A single mesocosm event form for AML",
+    "fields": [
+      {
+        "id": "experiment_id",
+        "label": "Experiment ID",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "sampling_date",
+        "label": "Sampling date",
+        "type": "date",
+        "required": true
+      },
+      {
+        "id": "sampling_time",
+        "label": "Sampling time",
+        "type": "time",
+        "required": true
+      },
+      {
+        "id": "mesocosm_event_id",
+        "label": "Mesocosm event ID",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "samplers",
+        "label": "Samplers",
+        "type": "text",
+        "required": false
+      },
+      {
+        "id": "volume_from_tank",
+        "label": "Volume taken from tank/bag (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "bottles",
+        "label": "Collected bottles",
+        "type": "dynamic",
+        "required": true,
+        "instance_name": "bottles",
+        "subFields": [
+            {
+                "id": "bottle_id",
+                "label": "Bottle ID",
+                "type": "text",
+                "inputType": "number",
+                "required": false
+            },
+            {
+                "id": "bottle_comment",
+                "label": "Comments",
+                "type": "text",
+                "required": false
+            }
+        ]
+      },
+      {
+        "id": "comments",
+        "label": "Comments",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+  }

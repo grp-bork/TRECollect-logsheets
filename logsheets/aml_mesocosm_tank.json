@@ -35,7 +35,7 @@
         "required": true
       },
       {
-        "id": "tank_volumne",
+        "id": "tank_volume",
         "label": "Tank volume (L)",
         "type": "text",
         "inputType": "number",
