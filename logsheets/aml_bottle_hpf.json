@@ -1,0 +1,117 @@
+{
+    "id": "aml_bottle_hpf",
+    "version": "1.0.0",
+    "name": "AML Bottle HPF",
+    "description": "A single bottle HPF form for AML",
+    "fields": [
+      {
+        "id": "envinronmental_event_id",
+        "label": "Environmental event ID",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "mesocosm_event_id",
+        "label": "Mesocosm event ID",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "bottle_id",
+        "label": "Bottle ID",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "user",
+        "label": "User",
+        "type": "text",
+        "required": false
+      },
+      {
+        "id": "volume_filtered",
+        "label": "Volume filtered (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "aml_arrival_time",
+        "label": "AML arrival time",
+        "type": "time",
+        "required": false
+      },
+      {
+        "id": "time_of_concentration",
+        "label": "Time of concentration",
+        "type": "time",
+        "required": false
+      },
+      {
+        "id": "created_samples",
+        "label": "Created samples (refers to 4 carriers in one position of puck)",
+        "type": "dynamic",
+        "required": true,
+        "instance_name": "Sample",
+        "subFields": [
+            {
+                "id": "size_fraction",
+                "label": "Size fraction (μm)",
+                "type": "select",
+                "options": ["0.2 - 3", "3-20", "20-200", "5-20", "10-40"],
+                "required": false
+            },
+            {
+                "id": "size_fraction_other",
+                "label": "Size fraction - other (μm)",
+                "type": "text",
+                "required": false
+            },
+            {
+                "id": "puck_id",
+                "label": "Puck ID",
+                "type": "text",
+                "required": false
+            },
+            {
+                "id": "position",
+                "label": "Position",
+                "type": "text",
+                "required": false
+            },
+            {
+                "id": "number_of_carriers",
+                "label": "Number of carriers",
+                "type": "select",
+                "options": ["1", "2", "3", "4", "5", "6", "7", "8"],
+                "required": false
+            },
+            {
+                "id": "copas_sorted",
+                "label": "COPAS sorted",
+                "type": "select",
+                "options": ["true", "false"],
+                "required": false
+            },
+            {
+                "id": "sample_id",
+                "label": "Sample ID (barcode)",
+                "type": "barcode",
+                "required": true
+            },
+            {
+                "id": "sample_comment",
+                "label": "Comments",
+                "type": "text",
+                "required": false
+            }
+        ]
+      },
+      {
+        "id": "comments",
+        "label": "Comments",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+  }
