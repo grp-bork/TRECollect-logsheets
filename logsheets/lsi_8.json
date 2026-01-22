@@ -1,6 +1,6 @@
 {
     "id": "lsi_8",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "name": "LSI 8",
     "description": "Shoreline Water CTD and Sampling Event Form",
     "fields": [
@@ -54,9 +54,8 @@
       },
       {
         "id": "mte_collected",
-        "label": "MTE",
-        "type": "multiselect",
-        "options": ["collected"],
+        "label": "MTE collected",
+        "type": "checkbox",
         "required": false
       },
       {
