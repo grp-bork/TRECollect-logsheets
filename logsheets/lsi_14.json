@@ -1,6 +1,6 @@
 {
     "id": "lsi_14",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "name": "LSI 14",
     "description": "Site Scoring Form",
     "fields": [
@@ -142,6 +142,33 @@
         "type": "text",
         "inputType": "number",
         "required": true
+      }
+    ],
+    "logic": [
+      {
+        "target_id": "total_score",
+        "type": "sum",
+        "source_ids": ["site_total", "soil_total", "sediment_total", "water_total"]
+      },
+      {
+        "target_id": "site_total",
+        "type": "sum",
+        "source_ids": ["scientific_value", "alignment_with_tara", "site_score"]
+      },
+      {
+        "target_id": "soil_total",
+        "type": "sum",
+        "source_ids": ["quality_of_metadata", "technical_feasibility", "quality_of_protocols_or_plugins"]
+      },
+      {
+        "target_id": "sediment_total",
+        "type": "sum",
+        "source_ids": ["transect_setup", "samples_complete", "quality_of_protocols"]
+      },
+      {
+        "target_id": "water_total",
+        "type": "sum",
+        "source_ids": ["time_between_sampling_processing", "all_samples", "time_filtration"]
       }
     ]
 }
