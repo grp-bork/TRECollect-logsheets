@@ -1,6 +1,6 @@
 {
     "id": "lsi_4",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "LSI 4",
     "description": "Sediment Transect Description Form",
     "fields": [
@@ -18,17 +18,16 @@
         "required": true
       },
       {
-        "id": "soil_chemistry_analysis",
-        "label": "Photo of the triangle",
+        "id": "triangle_photos",
+        "label": "Photos of the triangles",
         "type": "dynamic",
         "required": false,
         "instance_name": "Triangle photo",
         "subFields": [
           {
-            "id": "triangle_number",
-            "label": "Triangle number",
+            "id": "triangle_identifier",
+            "label": "Triangle identifier",
             "type": "text",
-            "inputType": "number",
             "required": false
           },
           {
