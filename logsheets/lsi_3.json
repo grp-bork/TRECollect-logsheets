@@ -46,7 +46,8 @@
       {
         "id": "auger_type",
         "label": "Auger type",
-        "type": "text",
+        "type": "select",
+        "options": ["Clay", "Sand", "Gravel or rock", "Combi"],
         "required": false
       },
       {
