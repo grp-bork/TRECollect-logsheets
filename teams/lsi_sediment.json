@@ -5,6 +5,16 @@
     "name": "Sediment",
     "sections": [
       {
+        "name": "Site setup",
+        "forms": [
+          {
+            "form_id": "lsi_1",
+            "title": "LSI 1",
+            "mandatory": false
+          }
+        ]
+      },
+      {
         "name": "Transects",
         "forms": [
           {

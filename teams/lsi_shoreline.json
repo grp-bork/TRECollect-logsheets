@@ -5,6 +5,16 @@
     "name": "Shoreline",
     "sections": [
       {
+        "name": "Site setup",
+        "forms": [
+          {
+            "form_id": "lsi_1",
+            "title": "LSI 1",
+            "mandatory": false
+          }
+        ]
+      },
+      {
         "forms": [
           {
             "form_id": "lsi_8",

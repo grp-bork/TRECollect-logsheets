@@ -10,7 +10,7 @@
           {
             "form_id": "lsi_1",
             "title": "LSI 1",
-            "mandatory": true
+            "mandatory": false
           }
         ]
       },
