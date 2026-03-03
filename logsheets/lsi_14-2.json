@@ -1,0 +1,86 @@
+{
+    "id": "lsi_14-2",
+    "version": "1.0.0",
+    "name": "LSI 14-2",
+    "description": "Sediment Scoring Form",
+    "fields": [
+      {
+        "id": "sediment_score_section",
+        "label": "Sediment score",
+        "type": "section"
+      },
+      {
+        "id": "transect_setup",
+        "label": "Transect setup",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "samples_complete",
+        "label": "Samples complete",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "quality_of_protocols",
+        "label": "Quality of protocols",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "sediment_total",
+        "label": "Sediment total",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "site_score_section",
+        "label": "Site score",
+        "type": "section"
+      },
+      {
+        "id": "site_score",
+        "label": "Site score",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "scientific_value",
+        "label": "Scientific value",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "alignment_with_tara",
+        "label": "Alignment with TARA",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "site_total",
+        "label": "Site total",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      }
+    ],
+    "logic": [
+      {
+        "target_id": "site_total",
+        "type": "sum",
+        "source_ids": ["scientific_value", "alignment_with_tara", "site_score"]
+      },
+      {
+        "target_id": "sediment_total",
+        "type": "sum",
+        "source_ids": ["transect_setup", "samples_complete", "quality_of_protocols"]
+      }
+    ]
+}

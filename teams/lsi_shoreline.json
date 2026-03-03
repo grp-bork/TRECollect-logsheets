@@ -30,6 +30,11 @@
             "form_id": "lsi_12",
             "title": "LSI 12",
             "mandatory": true
+          },
+          {
+            "form_id": "lsi_14-3",
+            "title": "LSI 14 - scoring",
+            "mandatory": true
           }
         ]
       }

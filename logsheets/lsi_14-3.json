@@ -1,0 +1,86 @@
+{
+    "id": "lsi_14-3",
+    "version": "1.0.0",
+    "name": "LSI 14-3",
+    "description": "Shoreline Scoring Form",
+    "fields": [
+      {
+        "id": "water_score_section",
+        "label": "Water score",
+        "type": "section"
+      },
+      {
+        "id": "time_between_sampling_processing",
+        "label": "<20' between sampling/processing",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "all_samples",
+        "label": "All samples",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "time_filtration",
+        "label": "<15' filtration",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "water_total",
+        "label": "Water total",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "site_score_section",
+        "label": "Site score",
+        "type": "section"
+      },
+      {
+        "id": "site_score",
+        "label": "Site score",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "scientific_value",
+        "label": "Scientific value",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "alignment_with_tara",
+        "label": "Alignment with TARA",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "site_total",
+        "label": "Site total",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      }
+    ],
+    "logic": [
+      {
+        "target_id": "site_total",
+        "type": "sum",
+        "source_ids": ["scientific_value", "alignment_with_tara", "site_score"]
+      },
+      {
+        "target_id": "water_total",
+        "type": "sum",
+        "source_ids": ["time_between_sampling_processing", "all_samples", "time_filtration"]
+      }
+    ]
+}

@@ -198,17 +198,7 @@
         "name": "Others",
         "forms": [
           {
-            "form_id": "lsi_6",
-            "title": "LSI 6 - drying analysis",
-            "mandatory": true
-          },
-          {
-            "form_id": "lsi_7",
-            "title": "LSI 7 - mutlimeter probe",
-            "mandatory": true
-          },
-          {
-            "form_id": "lsi_14",
+            "form_id": "lsi_14-1",
             "title": "LSI 14 - scoring",
             "mandatory": true
           }
