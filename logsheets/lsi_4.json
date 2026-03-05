@@ -1,6 +1,6 @@
 {
     "id": "lsi_4",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "name": "LSI 4",
     "description": "Sediment Transect Description Form",
     "fields": [
@@ -48,7 +48,7 @@
         "id": "fauna",
         "label": "Fauna",
         "type": "table",
-        "rows": ["Jellyfish", "Crustations", "Turtles", "Seals", "Birds", "Fish", "Mollusc", "Echinodermata", "Annelid"],
+        "rows": ["cows", "sheep", "goats", "reptiles", "rodents", "insects", "annelid+nematodes", "jellyfish", "crustations", "turtles", "seals", "birds", "fish", "mollusc", "echinodermata"],
         "columns": ["Alive", "Dead"],
         "inputType": "boolean",
         "required": false
@@ -57,7 +57,7 @@
         "id": "flora",
         "label": "Flora",
         "type": "multiselect",
-        "options": ["beach grass", "beach vines", "macroalge", "sea kale", "trees"],
+        "options": ["grass", "vines", "macroalge", "sea kale", "trees", "shrubs"],
         "required": false
       },
       {
@@ -78,14 +78,14 @@
         "id": "sediment_colour",
         "label": "Sediment Colour",
         "type": "multiselect",
-        "options": ["dark brown", "light brown", "black", "yellow", "white", "red"],
+        "options": ["dark brown", "light brown", "black", "yellow", "white", "red", "orange", "grey"],
         "required": false
       },
       {
         "id": "water_colour",
         "label": "Water Colour",
         "type": "multiselect",
-        "options": ["dark brown", "light brown", "blue", "blue-green", "green", "red"],
+        "options": ["dark brown", "light brown", "blue", "blue-green", "green", "red", "pink", "yellow"],
         "required": false
       },
       {
@@ -113,8 +113,8 @@
         "id": "anthropogenic_pressure",
         "label": "Qualitative assessment of anthropogenic pressure",
         "type": "table",
-        "rows": ["Glass", "People", "Vehicles", "Rubbish", "Cigarette butts"],
-        "columns": ["On beach", "In ocean"],
+        "rows": ["glass", "people", "vehicles", "rubbish", "cigarette butts", "rubber", "plastic", "charcol (burnt stuff)", "oil", "bricks", "cement", "metal", "manmade objects", "manmade structure", "vessels"],
+        "columns": ["On shore", "In the water"],
         "inputType": "boolean",
         "required": false
       },
