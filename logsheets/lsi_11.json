@@ -1,6 +1,6 @@
 {
     "id": "lsi_11",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "name": "LSI 11",
     "description": "Shoreline Water Metabolomics Form",
     "fields": [
@@ -66,19 +66,13 @@
         "required": false
       },
       {
-        "id": "hlb_ppl_section",
-        "label": "HLB & PPL",
+        "id": "hlb_section",
+        "label": "HLB",
         "type": "section"
       },
       {
         "id": "sample_hlb_replicate_1",
         "label": "HLB - replicate 1",
-        "type": "barcode",
-        "required": false
-      },
-      {
-        "id": "sample_ppl_replicate_1",
-        "label": "PPL - replicate 1",
         "type": "barcode",
         "required": false
       },
@@ -89,20 +83,8 @@
         "required": false
       },
       {
-        "id": "sample_ppl_replicate_2",
-        "label": "PPL - replicate 2",
-        "type": "barcode",
-        "required": false
-      },
-      {
         "id": "sample_hlb_replicate_3",
         "label": "HLB - replicate 3",
-        "type": "barcode",
-        "required": false
-      },
-      {
-        "id": "sample_ppl_replicate_3",
-        "label": "PPL - replicate 3",
         "type": "barcode",
         "required": false
       },
@@ -113,21 +95,15 @@
         "required": false
       },
       {
-        "id": "sample_ppl_blank",
-        "label": "PPL - blank",
-        "type": "barcode",
-        "required": false
-      },
-      {
-        "id": "hlb_ppl_filtration_duration",
-        "label": "HLB-PPL - filtration duration",
+        "id": "hlb_filtration_duration",
+        "label": "HLB - filtration duration",
         "type": "text",
         "mask": "HH:mm:ss",
         "required": false
       },
       {
-        "id": "hlb_ppl_remaining_volumes",
-        "label": "HLB-PPL - remaining volumes (L) if filtration >2h",
+        "id": "hlb_remaining_volumes",
+        "label": "HLB - remaining volumes (L) if filtration >2h",
         "type": "textarea",
         "required": false
       },

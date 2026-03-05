@@ -1,31 +1,100 @@
 {
     "id": "lsi_12",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "name": "LSI 12",
     "description": "Shoreline Water Niskin Form",
     "fields": [
       {
-        "id": "nut_doc_cdom_fdom_section",
-        "label": "NUT & DOC & CDOM/FDOM",
+        "id": "nut_replicate_1_section",
+        "label": "NUT replicate 1",
         "type": "section"
       },
       {
-        "id": "sample_nut_replicate_1",
-        "label": "NUT - replicate 1",
+        "id": "sample_nut_replicate_11",
+        "label": "NUT (1) - tube 1",
         "type": "barcode",
         "required": false
       },
       {
-        "id": "sample_nut_replicate_2",
-        "label": "NUT - replicate 2",
+        "id": "sample_nut_replicate_12",
+        "label": "NUT (1) - tube 2",
         "type": "barcode",
         "required": false
       },
       {
-        "id": "sample_nut_replicate_3",
-        "label": "NUT - replicate 3",
+        "id": "sample_nut_replicate_13",
+        "label": "NUT (1) - tube 3",
         "type": "barcode",
         "required": false
+      },
+      {
+        "id": "sample_nut_replicate_14",
+        "label": "NUT (1) - tube 4",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "nut_replicate_2_section",
+        "label": "NUT replicate 2",
+        "type": "section"
+      },
+      {
+        "id": "sample_nut_replicate_21",
+        "label": "NUT (2) - tube 1",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_nut_replicate_22",
+        "label": "NUT (2) - tube 2",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_nut_replicate_23",
+        "label": "NUT (2) - tube 3",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_nut_replicate_24",
+        "label": "NUT (2) - tube 4",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "nut_replicate_3_section",
+        "label": "NUT replicate 3",
+        "type": "section"
+      },
+      {
+        "id": "sample_nut_replicate_31",
+        "label": "NUT (3) - tube 1",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_nut_replicate_32",
+        "label": "NUT (3) - tube 2",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_nut_replicate_33",
+        "label": "NUT (3) - tube 3",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_nut_replicate_34",
+        "label": "NUT (3) - tube 4",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "doc_cdom_fdom_section",
+        "label": "DOC & CDOM/FDOM",
+        "type": "section"
       },
       {
         "id": "sample_doc_replicate_1",
@@ -77,12 +146,6 @@
         "required": false
       },
       {
-        "id": "sample_exp_replicate_1",
-        "label": "EXP (raw water sample in CDOM/FDOM bottle)",
-        "type": "barcode",
-        "required": false
-      },
-      {
         "id": "pm_hp_section",
         "label": "PM, HP",
         "type": "section"
@@ -91,6 +154,12 @@
         "id": "sample_pm_replicate_1",
         "label": "PM - replicate 1",
         "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "pm_replicate_1_filter_number",
+        "label": "PM (1) - filter number",
+        "type": "text",
         "required": false
       },
       {
@@ -114,6 +183,12 @@
         "required": false
       },
       {
+        "id": "pm_replicate_2_filter_number",
+        "label": "PM (2) - filter number",
+        "type": "text",
+        "required": false
+      },
+      {
         "id": "pm_replicate_2_filtration_volume",
         "label": "PM (2) - filtration volume (L)",
         "type": "text",
@@ -134,6 +209,12 @@
         "required": false
       },
       {
+        "id": "pm_replicate_3_filter_number",
+        "label": "PM (3) - filter number",
+        "type": "text",
+        "required": false
+      },
+      {
         "id": "pm_replicate_3_filtration_volume",
         "label": "PM (3) - filtration volume (L)",
         "type": "text",
@@ -151,6 +232,12 @@
         "id": "sample_pm_blank",
         "label": "PM - blank",
         "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "pm_blank_filter_number",
+        "label": "PM (blank) - filter number",
+        "type": "text",
         "required": false
       },
       {
@@ -217,7 +304,7 @@
       },
       {
         "id": "edna_cp_g_section",
-        "label": "eDNA, CP-G",
+        "label": "eDNA",
         "type": "section"
       },
       {
@@ -231,38 +318,6 @@
         "label": "eDNA - filtration volume (L)",
         "type": "text",
         "inputType": "number",
-        "required": false
-      },
-      {
-        "id": "sample_cp_g_replicate_1",
-        "label": "CP-G - replicate 1",
-        "type": "barcode",
-        "required": false
-      },
-      {
-        "id": "sample_cp_g_replicate_2",
-        "label": "CP-G - replicate 2",
-        "type": "barcode",
-        "required": false
-      },
-      {
-        "id": "sample_cp_g_replicate_3",
-        "label": "CP-G - replicate 3",
-        "type": "barcode",
-        "required": false
-      },
-      {
-        "id": "cp_g_filtration_volume",
-        "label": "CP-G - filtration volume (L)",
-        "type": "text",
-        "inputType": "number",
-        "required": false
-      },
-      {
-        "id": "cp_g_filtration_duration",
-        "label": "CP-G - filtration duration",
-        "type": "text",
-        "mask": "mm:ss",
         "required": false
       },
       {

@@ -1,8 +1,8 @@
 {
     "id": "lsi_10",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "name": "LSI 10",
-    "description": "Shoreline Water MetaBGT (S) Form",
+    "description": "Shoreline Water Genomics (S) Form",
     "fields": [
       {
         "id": "s20_section",
@@ -50,8 +50,53 @@
         "required": false
       },
       {
-        "id": "s320_s023_section",
-        "label": "S320 & S023 - replicate 1",
+        "id": "s200_section",
+        "label": "S200",
+        "type": "section"
+      },
+      {
+        "id": "sample_s200_replicate_1",
+        "label": "S200 - replicate 1",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "s200_replicate_1_filtration_volume",
+        "label": "S200 (1) - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "s200_replicate_1_filtration_duration",
+        "label": "S200 (1) - filtration duration",
+        "type": "text",
+        "mask": "mm:ss",
+        "required": false
+      },
+      {
+        "id": "sample_s200_replicate_2",
+        "label": "S200 - replicate 2",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "s200_replicate_2_filtration_volume",
+        "label": "S200 (2) - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "s200_replicate_2_filtration_duration",
+        "label": "S200 (2) - filtration duration",
+        "type": "text",
+        "mask": "mm:ss",
+        "required": false
+      },
+      {
+        "id": "s320_section",
+        "label": "S320",
         "type": "section"
       },
       {
@@ -61,34 +106,62 @@
         "required": false
       },
       {
+        "id": "s320_replicate_1_filtration_volume",
+        "label": "S320 (1) - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "s320_replicate_1_filtration_duration",
+        "label": "S320 (1) - filtration duration",
+        "type": "text",
+        "mask": "mm:ss",
+        "required": false
+      },
+      {
+        "id": "sample_s320_replicate_2",
+        "label": "S320 - replicate 2",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "s320_replicate_2_filtration_volume",
+        "label": "S320 (2) - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "s320_replicate_2_filtration_duration",
+        "label": "S320 (2) - filtration duration",
+        "type": "text",
+        "mask": "mm:ss",
+        "required": false
+      },
+      {
+        "id": "s023_section",
+        "label": "S023",
+        "type": "section"
+      },
+      {
         "id": "sample_s023_replicate_1",
         "label": "S023 - replicate 1",
         "type": "barcode",
         "required": false
       },
       {
-        "id": "s320_s023_replicate_1_filtration_volume",
-        "label": "S320-S023 (1) - filtration volume (L)",
+        "id": "s023_replicate_1_filtration_volume",
+        "label": "S023 (1) - filtration volume (L)",
         "type": "text",
         "inputType": "number",
         "required": false
       },
       {
-        "id": "s320_s023_replicate_1_filtration_duration",
-        "label": "S320-S023 (1) - filtration duration",
+        "id": "s023_replicate_1_filtration_duration",
+        "label": "S023 (1) - filtration duration",
         "type": "text",
         "mask": "mm:ss",
-        "required": false
-      },
-      {
-        "id": "s320_s023_section",
-        "label": "S320 & S023 - replicate 2",
-        "type": "section"
-      },
-      {
-        "id": "sample_s320_replicate_2",
-        "label": "S320 - replicate 2",
-        "type": "barcode",
         "required": false
       },
       {
@@ -98,15 +171,15 @@
         "required": false
       },
       {
-        "id": "s320_s023_replicate_2_filtration_volume",
-        "label": "S320-S023 (2) - filtration volume (L)",
+        "id": "s023_replicate_2_filtration_volume",
+        "label": "S023 (2) - filtration volume (L)",
         "type": "text",
         "inputType": "number",
         "required": false
       },
       {
-        "id": "s320_s023_replicate_2_filtration_duration",
-        "label": "S320-S023 (2) - filtration duration",
+        "id": "s023_replicate_2_filtration_duration",
+        "label": "S023 (2) - filtration duration",
         "type": "text",
         "mask": "mm:ss",
         "required": false
