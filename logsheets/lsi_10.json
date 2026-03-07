@@ -1,6 +1,6 @@
 {
     "id": "lsi_10",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "name": "LSI 10",
     "description": "Shoreline Water Genomics (S) Form",
     "fields": [
@@ -25,8 +25,8 @@
       {
         "id": "s20_replicate_1_filtration_duration",
         "label": "S20 (1) - filtration duration",
-        "type": "text",
-        "mask": "mm:ss",
+        "type": "timepicker",
+        "default_value": "00:00:00",
         "required": false
       },
       {
@@ -45,8 +45,8 @@
       {
         "id": "s20_replicate_2_filtration_duration",
         "label": "S20 (2) - filtration duration",
-        "type": "text",
-        "mask": "mm:ss",
+        "type": "timepicker",
+        "default_value": "00:00:00",
         "required": false
       },
       {
@@ -70,8 +70,8 @@
       {
         "id": "s200_replicate_1_filtration_duration",
         "label": "S200 (1) - filtration duration",
-        "type": "text",
-        "mask": "mm:ss",
+        "type": "timepicker",
+        "default_value": "00:00:00",
         "required": false
       },
       {
@@ -90,8 +90,8 @@
       {
         "id": "s200_replicate_2_filtration_duration",
         "label": "S200 (2) - filtration duration",
-        "type": "text",
-        "mask": "mm:ss",
+        "type": "timepicker",
+        "default_value": "00:00:00",
         "required": false
       },
       {
@@ -115,8 +115,8 @@
       {
         "id": "s320_replicate_1_filtration_duration",
         "label": "S320 (1) - filtration duration",
-        "type": "text",
-        "mask": "mm:ss",
+        "type": "timepicker",
+        "default_value": "00:00:00",
         "required": false
       },
       {
@@ -135,8 +135,8 @@
       {
         "id": "s320_replicate_2_filtration_duration",
         "label": "S320 (2) - filtration duration",
-        "type": "text",
-        "mask": "mm:ss",
+        "type": "timepicker",
+        "default_value": "00:00:00",
         "required": false
       },
       {
@@ -160,8 +160,8 @@
       {
         "id": "s023_replicate_1_filtration_duration",
         "label": "S023 (1) - filtration duration",
-        "type": "text",
-        "mask": "mm:ss",
+        "type": "timepicker",
+        "default_value": "00:00:00",
         "required": false
       },
       {
@@ -180,8 +180,8 @@
       {
         "id": "s023_replicate_2_filtration_duration",
         "label": "S023 (2) - filtration duration",
-        "type": "text",
-        "mask": "mm:ss",
+        "type": "timepicker",
+        "default_value": "00:00:00",
         "required": false
       },
       {
@@ -205,8 +205,8 @@
       {
         "id": "s02_replicate_1_filtration_duration",
         "label": "S<02 (1) - filtration duration",
-        "type": "text",
-        "mask": "mm:ss",
+        "type": "timepicker",
+        "default_value": "00:00:00",
         "required": false
       },
       {
@@ -225,8 +225,8 @@
       {
         "id": "s02_replicate_2_filtration_duration",
         "label": "S<02 (2) - filtration duration",
-        "type": "text",
-        "mask": "mm:ss",
+        "type": "timepicker",
+        "default_value": "00:00:00",
         "required": false
       },
       {

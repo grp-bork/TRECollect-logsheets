@@ -1,6 +1,6 @@
 {
     "id": "lsi_12",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "name": "LSI 12",
     "description": "Shoreline Water Niskin Form",
     "fields": [
@@ -172,8 +172,8 @@
       {
         "id": "pm_replicate_1_filtration_duration",
         "label": "PM (1) - filtration duration",
-        "type": "text",
-        "mask": "mm:ss",
+        "type": "timepicker",
+        "default_value": "00:00:00",
         "required": false
       },
       {
@@ -198,8 +198,8 @@
       {
         "id": "pm_replicate_2_filtration_duration",
         "label": "PM (2) - filtration duration",
-        "type": "text",
-        "mask": "mm:ss",
+        "type": "timepicker",
+        "default_value": "00:00:00",
         "required": false
       },
       {
@@ -224,8 +224,8 @@
       {
         "id": "pm_replicate_3_filtration_duration",
         "label": "PM (3) - filtration duration",
-        "type": "text",
-        "mask": "mm:ss",
+        "type": "timepicker",
+        "default_value": "00:00:00",
         "required": false
       },
       {
@@ -250,8 +250,8 @@
       {
         "id": "pm_blank_filtration_duration",
         "label": "PM (blank) - filtration duration",
-        "type": "text",
-        "mask": "mm:ss",
+        "type": "timepicker",
+        "default_value": "00:00:00",
         "required": false
       },
       {
@@ -263,8 +263,8 @@
       {
         "id": "hp_replicate_1_filtration_duration",
         "label": "HP - filtration duration",
-        "type": "text",
-        "mask": "mm:ss",
+        "type": "timepicker",
+        "default_value": "00:00:00",
         "required": false
       },
       {

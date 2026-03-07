@@ -1,6 +1,6 @@
 {
     "id": "lsi_11",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "name": "LSI 11",
     "description": "Shoreline Water Metabolomics Form",
     "fields": [
@@ -43,8 +43,8 @@
       {
         "id": "mb320_mb033_filtration_duration",
         "label": "MB320-MB033 - filtration duration",
-        "type": "text",
-        "mask": "mm:ss",
+        "type": "timepicker",
+        "default_value": "00:00:00",
         "required": false
       },
       {
@@ -97,8 +97,8 @@
       {
         "id": "hlb_filtration_duration",
         "label": "HLB - filtration duration",
-        "type": "text",
-        "mask": "HH:mm:ss",
+        "type": "timepicker",
+        "default_value": "00:00:00",
         "required": false
       },
       {
