@@ -1,6 +1,6 @@
 {
     "id": "lsi_2",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "name": "LSI 2",
     "description": "Soil Transect Description Form",
     "fields": [
@@ -106,6 +106,15 @@
         "label": "Transect slope aspect / exposition",
         "type": "multiselect",
         "options": ["N", "NE", "E", "SE", "S", "SW", "W", "NW"],
+        "required": false
+      },
+      {
+        "id": "fauna",
+        "label": "Fauna",
+        "type": "table",
+        "rows": ["earthworms", "ants", "beetle", "millipede", "centipede", "snails"],
+        "columns": ["Alive", "Dead"],
+        "inputType": "boolean",
         "required": false
       },
       {
