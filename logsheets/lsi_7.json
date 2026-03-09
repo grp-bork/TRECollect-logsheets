@@ -1,6 +1,6 @@
 {
     "id": "lsi_7",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "name": "LSI 7",
     "description": "Soil Mutlimeter Probe Form",
     "fields": [
@@ -50,7 +50,7 @@
         "id": "multimeter_transect_1",
         "label": "Multimeter - Transect 1",
         "type": "table",
-        "rows": ["Salinity (g/L)", "Soil moisture (% vol)", "Soil Temp (°C)", "pH", "Conductivity (mS/cm)", "Light (lux)"],
+        "rows": ["Salinity (g/L)", "Soil moisture (% vol)", "Soil Temp (°C)", "pH", "Conductivity (mS/cm)", "Light (lux)", "Redox potential (mV)"],
         "columns": ["Sample 1", "Sample 2", "Sample 3"],
         "inputType": "number",
         "required": false
@@ -71,7 +71,7 @@
         "id": "multimeter_transect_2",
         "label": "Multimeter - Transect 2",
         "type": "table",
-        "rows": ["Salinity (g/L)", "Soil moisture (% vol)", "Soil Temp (°C)", "pH", "Conductivity (mS/cm)", "Light (lux)"],
+        "rows": ["Salinity (g/L)", "Soil moisture (% vol)", "Soil Temp (°C)", "pH", "Conductivity (mS/cm)", "Light (lux)", "Redox potential (mV)"],
         "columns": ["Sample 1", "Sample 2", "Sample 3"],
         "inputType": "number",
         "required": false
@@ -92,7 +92,7 @@
         "id": "multimeter_transect_3",
         "label": "Multimeter - Transect 3",
         "type": "table",
-        "rows": ["Salinity (g/L)", "Soil moisture (% vol)", "Soil Temp (°C)", "pH", "Conductivity (mS/cm)", "Light (lux)"],
+        "rows": ["Salinity (g/L)", "Soil moisture (% vol)", "Soil Temp (°C)", "pH", "Conductivity (mS/cm)", "Light (lux)", "Redox potential (mV)"],
         "columns": ["Sample 1", "Sample 2", "Sample 3"],
         "inputType": "number",
         "required": false
