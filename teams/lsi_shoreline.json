@@ -15,6 +15,7 @@
         ]
       },
       {
+        "name": "Transect",
         "forms": [
           {
             "form_id": "lsi_8",
@@ -40,7 +41,12 @@
             "form_id": "lsi_12",
             "title": "LSI 12",
             "mandatory": true
-          },
+          }
+        ]
+      },
+      {
+        "name": "Scoring",
+        "forms": [
           {
             "form_id": "lsi_14-3",
             "title": "LSI 14 - scoring",
