@@ -1,6 +1,6 @@
 {
     "id": "lsi_4",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "name": "LSI 4",
     "description": "Sediment Transect Description Form",
     "fields": [
@@ -48,7 +48,7 @@
         "id": "fauna",
         "label": "Fauna",
         "type": "table",
-        "rows": ["cows", "sheep", "goats", "reptiles", "rodents", "insects", "annelid+nematodes", "jellyfish", "crustations", "turtles", "seals", "birds", "fish", "mollusc", "echinodermata"],
+        "rows": ["cows", "sheep", "goats", "reptiles", "rodents", "insects", "annelid", "jellyfish", "crustations", "turtles", "seals", "birds", "fish", "mollusc", "echinodermata"],
         "columns": ["Alive", "Dead"],
         "inputType": "boolean",
         "required": false
@@ -77,9 +77,75 @@
       {
         "id": "sediment_colour",
         "label": "Sediment Colour",
-        "type": "multiselect",
-        "options": ["dark brown", "light brown", "black", "yellow", "white", "red", "orange", "grey"],
-        "required": false
+        "type": "multiselect_image",
+        "required": false,
+        "options": [
+          {
+            "value": "black",
+            "image": "images/colours_black.png",
+            "label": "Black"
+          },
+          {
+            "value": "blue_green",
+            "image": "images/colours_blue_green.png",
+            "label": "Blue/Green"
+          },
+          {
+            "value": "brown",
+            "image": "images/colours_brown.png",
+            "label": "Brown"
+          },
+          {
+            "value": "dark_brown",
+            "image": "images/colours_dark_brown.png",
+            "label": "Dark Brown"
+          },
+          {
+            "value": "dark_grey",
+            "image": "images/colours_dark_grey.png",
+            "label": "Dark Grey"
+          },
+          {
+            "value": "dark_red",
+            "image": "images/colours_dark_red.png",
+            "label": "Dark Red"
+          },
+          {
+            "value": "light_grey",
+            "image": "images/colours_light_grey.png",
+            "label": "Light Grey"
+          },
+          {
+            "value": "orange",
+            "image": "images/colours_orange.png",
+            "label": "Orange"
+          },
+          {
+            "value": "pale_brown",
+            "image": "images/colours_pale_brown.png",
+            "label": "Pale Brown"
+          },
+          {
+            "value": "pale_yellow",
+            "image": "images/colours_pale_yellow.png",
+            "label": "Pale Yellow"
+          },
+          {
+            "value": "white",
+            "image": "images/colours_white.png",
+            "label": "White"
+          },
+          {
+            "value": "yellow",
+            "image": "images/colours_yellow.png",
+            "label": "Yellow"
+          },
+          {
+            "value": "red",
+            "image": "images/colours_red.png",
+            "label": "Red"
+          }
+        ]
       },
       {
         "id": "water_colour",
@@ -98,9 +164,75 @@
       {
         "id": "core_colour",
         "label": "Core Colour",
-        "type": "multiselect",
-        "options": ["dark_brown", "light_brown", "black", "yellow", "white", "orange"],
-        "required": false
+        "type": "multiselect_image",
+        "required": false,
+        "options": [
+          {
+            "value": "black",
+            "image": "images/colours_black.png",
+            "label": "Black"
+          },
+          {
+            "value": "blue_green",
+            "image": "images/colours_blue_green.png",
+            "label": "Blue/Green"
+          },
+          {
+            "value": "brown",
+            "image": "images/colours_brown.png",
+            "label": "Brown"
+          },
+          {
+            "value": "dark_brown",
+            "image": "images/colours_dark_brown.png",
+            "label": "Dark Brown"
+          },
+          {
+            "value": "dark_grey",
+            "image": "images/colours_dark_grey.png",
+            "label": "Dark Grey"
+          },
+          {
+            "value": "dark_red",
+            "image": "images/colours_dark_red.png",
+            "label": "Dark Red"
+          },
+          {
+            "value": "light_grey",
+            "image": "images/colours_light_grey.png",
+            "label": "Light Grey"
+          },
+          {
+            "value": "orange",
+            "image": "images/colours_orange.png",
+            "label": "Orange"
+          },
+          {
+            "value": "pale_brown",
+            "image": "images/colours_pale_brown.png",
+            "label": "Pale Brown"
+          },
+          {
+            "value": "pale_yellow",
+            "image": "images/colours_pale_yellow.png",
+            "label": "Pale Yellow"
+          },
+          {
+            "value": "white",
+            "image": "images/colours_white.png",
+            "label": "White"
+          },
+          {
+            "value": "yellow",
+            "image": "images/colours_yellow.png",
+            "label": "Yellow"
+          },
+          {
+            "value": "red",
+            "image": "images/colours_red.png",
+            "label": "Red"
+          }
+        ]
       },
       {
         "id": "visible_anoxic_layer",
