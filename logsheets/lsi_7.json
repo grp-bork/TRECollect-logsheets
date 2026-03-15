@@ -1,6 +1,6 @@
 {
     "id": "lsi_7",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "name": "LSI 7",
     "description": "Soil Mutlimeter Probe Form",
     "fields": [
@@ -60,7 +60,7 @@
         "label": "FTIR scan performed - soil transect 1",
         "type": "multiselect",
         "options": ["Sample 1", "Sample 2", "Sample 3"],
-        "required": true
+        "required": false
       },
       {
         "id": "soil_transect_2",
@@ -81,7 +81,7 @@
         "label": "FTIR scan performed - soil transect 2",
         "type": "multiselect",
         "options": ["Sample 1", "Sample 2", "Sample 3"],
-        "required": true
+        "required": false
       },
       {
         "id": "soil_transect_3",
@@ -102,7 +102,7 @@
         "label": "FTIR scan performed - soil transect 3",
         "type": "multiselect",
         "options": ["Sample 1", "Sample 2", "Sample 3"],
-        "required": true
+        "required": false
       },
       {
         "id": "comments",
