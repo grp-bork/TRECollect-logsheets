@@ -1,6 +1,6 @@
 {
     "id": "lsi_14-3",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "name": "LSI 14-3",
     "description": "Shoreline Scoring Form",
     "fields": [
@@ -52,13 +52,6 @@
       {
         "id": "scientific_value",
         "label": "Scientific value",
-        "type": "text",
-        "inputType": "number",
-        "required": false
-      },
-      {
-        "id": "alignment_with_tara",
-        "label": "Alignment with TARA",
         "type": "text",
         "inputType": "number",
         "required": false
