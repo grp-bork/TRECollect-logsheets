@@ -66,13 +66,19 @@
         "required": false
       },
       {
-        "id": "hlb_section",
-        "label": "HLB",
+        "id": "hlb_ppl_section",
+        "label": "HLB & PPL",
         "type": "section"
       },
       {
         "id": "sample_hlb_replicate_1",
         "label": "HLB - replicate 1",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_ppl_replicate_1",
+        "label": "PPL - replicate 1",
         "type": "barcode",
         "required": false
       },
@@ -83,8 +89,20 @@
         "required": false
       },
       {
+        "id": "sample_ppl_replicate_2",
+        "label": "PPL - replicate 2",
+        "type": "barcode",
+        "required": false
+      },
+      {
         "id": "sample_hlb_replicate_3",
         "label": "HLB - replicate 3",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_ppl_replicate_3",
+        "label": "PPL - replicate 3",
         "type": "barcode",
         "required": false
       },
@@ -95,15 +113,21 @@
         "required": false
       },
       {
-        "id": "hlb_filtration_duration",
-        "label": "HLB - filtration duration",
+        "id": "sample_ppl_blank",
+        "label": "PPL - blank",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "hlb_ppl_filtration_duration",
+        "label": "HLB & PPL - filtration duration",
         "type": "timepicker",
         "default_value": "00:00:00",
         "required": false
       },
       {
-        "id": "hlb_remaining_volumes",
-        "label": "HLB - remaining volumes (L) if filtration >2h",
+        "id": "hlb_ppl_remaining_volumes",
+        "label": "HLB & PPL - remaining volumes (L) if filtration >2h",
         "type": "textarea",
         "required": false
       },
