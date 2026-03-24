@@ -68,7 +68,7 @@
       {
         "target_id": "site_total",
         "type": "sum",
-        "source_ids": ["scientific_value", "alignment_with_tara", "site_score"]
+        "source_ids": ["scientific_value", "site_score"]
       },
       {
         "target_id": "sediment_total",
