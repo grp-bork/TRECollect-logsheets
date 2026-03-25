@@ -1,6 +1,6 @@
 {
     "id": "lsi_soil",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "team": "LSI",
     "name": "Soil",
     "sections": [
@@ -94,7 +94,7 @@
           {
             "form_id": "lsi_2",
             "title": "Soil transect 2",
-            "mandatory": true,
+            "mandatory": false,
             "prefills": [
               {
                 "widget_id": "transect_number",
@@ -105,7 +105,7 @@
           {
             "form_id": "lsi_3",
             "title": "Soil transect 2 - square 1",
-            "mandatory": true,
+            "mandatory": false,
             "prefills": [
               {
                 "widget_id": "transect_number",
@@ -120,7 +120,7 @@
           {
             "form_id": "lsi_3",
             "title": "Soil transect 2 - square 2",
-            "mandatory": true,
+            "mandatory": false,
             "prefills": [
               {
                 "widget_id": "transect_number",
@@ -135,7 +135,7 @@
           {
             "form_id": "lsi_3",
             "title": "Soil transect 2 - Square 3",
-            "mandatory": true,
+            "mandatory": false,
             "prefills": [
               {
                 "widget_id": "transect_number",
@@ -150,7 +150,7 @@
           {
             "form_id": "lsi_13",
             "title": "Soil transect 2 - leaves",
-            "mandatory": true,
+            "mandatory": false,
             "prefills": [
               {
                 "widget_id": "transect_number",
