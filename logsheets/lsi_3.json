@@ -1,6 +1,6 @@
 {
     "id": "lsi_3",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "name": "LSI 3",
     "description": "Soil Sample Description Form",
     "fields": [
@@ -299,6 +299,12 @@
       {
         "id": "sample_roots",
         "label": "Roots",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "bulk_density",
+        "label": "Bulk density",
         "type": "barcode",
         "required": false
       },
