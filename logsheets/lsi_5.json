@@ -1,6 +1,6 @@
 {
     "id": "lsi_5",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "name": "LSI 5",
     "description": "Sediment Sample Description Form",
     "fields": [
@@ -144,6 +144,12 @@
         "required": false
       },
       {
+        "id": "extra_organic_carbon",
+        "label": "Organic carbon (extra)",
+        "type": "barcode",
+        "required": false
+      },
+      {
         "id": "sample_inorganic_pollutants",
         "label": "Inorganic pollutants",
         "type": "barcode",
@@ -170,12 +176,6 @@
       {
         "id": "sample_xenobiotics",
         "label": "Xenobiotics",
-        "type": "barcode",
-        "required": false
-      },
-      {
-        "id": "sample_organic_pollutants",
-        "label": "Organic pollutants",
         "type": "barcode",
         "required": false
       },
