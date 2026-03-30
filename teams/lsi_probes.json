@@ -1,20 +1,29 @@
 {
     "id": "lsi_probes",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "team": "LSI",
-    "name": "Probes",
+    "name": "Parallel",
     "sections": [
       {
         "forms": [
           {
             "form_id": "lsi_6",
             "title": "LSI 6 - drying analysis",
-            "mandatory": true
+            "mandatory": false
           },
           {
             "form_id": "lsi_7",
             "title": "LSI 7 - multimeter probe",
-            "mandatory": true
+            "mandatory": false
+          },
+          {
+            "form_id": "lsi_13",
+            "title": "LSI 13 - leaves",
+            "mandatory": false,
+            "dynamic":
+              {
+                "button_name": "Add leaves"
+              }
           }
         ]
       }
