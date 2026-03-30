@@ -1,6 +1,6 @@
 {
     "id": "lsi_10",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "name": "LSI 10",
     "description": "Shoreline Water Genomics (S) Form",
     "fields": [
@@ -227,6 +227,13 @@
         "label": "S<02 (2) - filtration duration",
         "type": "timepicker",
         "default_value": "00:00:00",
+        "required": false
+      },
+      {
+        "id": "priority_sample",
+        "label": "Priority sample",
+        "type": "multiselect",
+        "options": ["1", "2", "3"],
         "required": false
       },
       {
