@@ -1,6 +1,6 @@
 {
     "id": "lsi_soil",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "team": "LSI",
     "name": "Soil",
     "sections": [
@@ -76,7 +76,7 @@
           {
             "form_id": "lsi_13",
             "title": "Soil transect 1 - leaves",
-            "mandatory": true,
+            "mandatory": false,
             "prefills": [
               {
                 "widget_id": "transect_number",
