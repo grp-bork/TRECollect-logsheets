@@ -1,6 +1,6 @@
 {
     "id": "lsi_5",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "name": "LSI 5",
     "description": "Sediment Sample Description Form",
     "fields": [
@@ -188,12 +188,6 @@
       {
         "id": "sample_granulometry",
         "label": "Granulometry",
-        "type": "barcode",
-        "required": false
-      },
-      {
-        "id": "sample_ions",
-        "label": "Ions",
         "type": "barcode",
         "required": false
       },
