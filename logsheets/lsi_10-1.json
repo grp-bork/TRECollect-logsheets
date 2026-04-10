@@ -1,0 +1,351 @@
+{
+    "id": "lsi_10-1",
+    "version": "1.0.0",
+    "name": "LSI 10 (WWTP)",
+    "description": "WWTP Water Genomics (S) Form",
+    "fields": [
+      {
+        "id": "s20_section",
+        "label": "S20",
+        "type": "section"
+      },
+      {
+        "id": "sample_s20_replicate_1",
+        "label": "S20 - replicate 1",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "s20_replicate_1_filtration_volume",
+        "label": "S20 (1) - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "s20_replicate_1_filtration_duration",
+        "label": "S20 (1) - filtration duration",
+        "type": "timepicker",
+        "default_value": "00:00:00",
+        "required": false
+      },
+      {
+        "id": "sample_s20_replicate_2",
+        "label": "S20 - replicate 2",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "s20_replicate_2_filtration_volume",
+        "label": "S20 (2) - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "s20_replicate_2_filtration_duration",
+        "label": "S20 (2) - filtration duration",
+        "type": "timepicker",
+        "default_value": "00:00:00",
+        "required": false
+      },
+      {
+        "id": "sample_s20_replicate_3",
+        "label": "S20 - replicate 3",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "s20_replicate_3_filtration_volume",
+        "label": "S20 (3) - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "s20_replicate_3_filtration_duration",
+        "label": "S20 (3) - filtration duration",
+        "type": "timepicker",
+        "default_value": "00:00:00",
+        "required": false
+      },
+      {
+        "id": "s200_section",
+        "label": "S200",
+        "type": "section"
+      },
+      {
+        "id": "sample_s200_replicate_1",
+        "label": "S200 - replicate 1",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "s200_replicate_1_filtration_volume",
+        "label": "S200 (1) - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "s200_replicate_1_filtration_duration",
+        "label": "S200 (1) - filtration duration",
+        "type": "timepicker",
+        "default_value": "00:00:00",
+        "required": false
+      },
+      {
+        "id": "sample_s200_replicate_2",
+        "label": "S200 - replicate 2",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "s200_replicate_2_filtration_volume",
+        "label": "S200 (2) - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "s200_replicate_2_filtration_duration",
+        "label": "S200 (2) - filtration duration",
+        "type": "timepicker",
+        "default_value": "00:00:00",
+        "required": false
+      },
+      {
+        "id": "sample_s200_replicate_3",
+        "label": "S200 - replicate 3",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "s200_replicate_3_filtration_volume",
+        "label": "S200 (3) - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "s200_replicate_3_filtration_duration",
+        "label": "S200 (3) - filtration duration",
+        "type": "timepicker",
+        "default_value": "00:00:00",
+        "required": false
+      },
+      {
+        "id": "s320_section",
+        "label": "S320",
+        "type": "section"
+      },
+      {
+        "id": "sample_s320_replicate_1",
+        "label": "S320 - replicate 1",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "s320_replicate_1_filtration_volume",
+        "label": "S320 (1) - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "s320_replicate_1_filtration_duration",
+        "label": "S320 (1) - filtration duration",
+        "type": "timepicker",
+        "default_value": "00:00:00",
+        "required": false
+      },
+      {
+        "id": "sample_s320_replicate_2",
+        "label": "S320 - replicate 2",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "s320_replicate_2_filtration_volume",
+        "label": "S320 (2) - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "s320_replicate_2_filtration_duration",
+        "label": "S320 (2) - filtration duration",
+        "type": "timepicker",
+        "default_value": "00:00:00",
+        "required": false
+      },
+      {
+        "id": "sample_s320_replicate_3",
+        "label": "S320 - replicate 3",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "s320_replicate_3_filtration_volume",
+        "label": "S320 (3) - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "s320_replicate_3_filtration_duration",
+        "label": "S320 (3) - filtration duration",
+        "type": "timepicker",
+        "default_value": "00:00:00",
+        "required": false
+      },
+      {
+        "id": "s023_section",
+        "label": "S023",
+        "type": "section"
+      },
+      {
+        "id": "sample_s023_replicate_1",
+        "label": "S023 - replicate 1",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "s023_replicate_1_filtration_volume",
+        "label": "S023 (1) - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "s023_replicate_1_filtration_duration",
+        "label": "S023 (1) - filtration duration",
+        "type": "timepicker",
+        "default_value": "00:00:00",
+        "required": false
+      },
+      {
+        "id": "sample_s023_replicate_2",
+        "label": "S023 - replicate 2",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "s023_replicate_2_filtration_volume",
+        "label": "S023 (2) - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "s023_replicate_2_filtration_duration",
+        "label": "S023 (2) - filtration duration",
+        "type": "timepicker",
+        "default_value": "00:00:00",
+        "required": false
+      },
+      {
+        "id": "sample_s023_replicate_3",
+        "label": "S023 - replicate 3",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "s023_replicate_3_filtration_volume",
+        "label": "S023 (3) - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "s023_replicate_3_filtration_duration",
+        "label": "S023 (3) - filtration duration",
+        "type": "timepicker",
+        "default_value": "00:00:00",
+        "required": false
+      },
+      {
+        "id": "viruses_section",
+        "label": "Viruses",
+        "type": "section"
+      },
+      {
+        "id": "sample_s02_replicate_1",
+        "label": "S<02 - replicate 1",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "s02_replicate_1_filtration_volume",
+        "label": "S<02 (1) - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "s02_replicate_1_filtration_duration",
+        "label": "S<02 (1) - filtration duration",
+        "type": "timepicker",
+        "default_value": "00:00:00",
+        "required": false
+      },
+      {
+        "id": "sample_s02_replicate_2",
+        "label": "S<02 - replicate 2",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "s02_replicate_2_filtration_volume",
+        "label": "S<02 (2) - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "s02_replicate_2_filtration_duration",
+        "label": "S<02 (2) - filtration duration",
+        "type": "timepicker",
+        "default_value": "00:00:00",
+        "required": false
+      },
+      {
+        "id": "sample_s02_replicate_3",
+        "label": "S<02 - replicate 3",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "s02_replicate_3_filtration_volume",
+        "label": "S<02 (3) - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "s02_replicate_3_filtration_duration",
+        "label": "S<02 (3) - filtration duration",
+        "type": "timepicker",
+        "default_value": "00:00:00",
+        "required": false
+      },
+      {
+        "id": "Extra",
+        "label": "extra",
+        "type": "section"
+      },
+      {
+        "id": "priority_sample",
+        "label": "Priority sample",
+        "type": "select",
+        "options": ["1", "2", "3"],
+        "required": false
+      },
+      {
+        "id": "comments",
+        "label": "Comments",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+}

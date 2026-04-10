@@ -1,0 +1,23 @@
+{
+    "id": "lsi_wwtp",
+    "version": "1.0.0",
+    "team": "LSI",
+    "name": "WWTP",
+    "sections": [
+      {
+        "name": "Transect",
+        "forms": [
+          {
+            "form_id": "lsi_10-1",
+            "title": "LSI 10 (WWTP)",
+            "mandatory": true
+          },
+          {
+            "form_id": "lsi_11",
+            "title": "LSI 11",
+            "mandatory": false
+          }
+        ]
+      }
+    ]
+}
