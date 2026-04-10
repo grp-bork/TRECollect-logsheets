@@ -1,6 +1,6 @@
 {
     "id": "lsi_8",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "name": "LSI 8",
     "description": "Shoreline Water CTD and Sampling Event Form",
     "fields": [
@@ -76,8 +76,8 @@
         "required": true
       },
       {
-        "id": "water_collection",
-        "label": "Water collection",
+        "id": "water_collection_and_processing",
+        "label": "Water collection and processing",
         "type": "dynamic",
         "required": true,
         "instance_name": "Carboy",
@@ -93,25 +93,20 @@
             "label": "Water collection end time",
             "type": "time",
             "required": true
+          },
+          {
+            "id": "water_processing_time_start",
+            "label": "Water processing start time",
+            "type": "time",
+            "required": true
+          },
+          {
+            "id": "water_processing_time_end",
+            "label": "Water processing end time",
+            "type": "time",
+            "required": true
           }
         ]
-      },
-      {
-        "id": "water_processing_section",
-        "label": "Water processing",
-        "type": "section"
-      },
-      {
-        "id": "water_processing_time_start",
-        "label": "Water processing start time",
-        "type": "time",
-        "required": true
-      },
-      {
-        "id": "water_processing_time_end",
-        "label": "Water processing end time",
-        "type": "time",
-        "required": true
       },
       {
         "id": "comments",
