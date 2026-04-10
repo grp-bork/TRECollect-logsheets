@@ -1,6 +1,6 @@
 {
     "id": "lsi_12",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "name": "LSI 12",
     "description": "Shoreline Water Niskin Form",
     "fields": [
@@ -258,6 +258,13 @@
         "id": "sample_hp_replicate_1",
         "label": "HP",
         "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "hp_replicate_1_filtration_volume",
+        "label": "HP - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
         "required": false
       },
       {
