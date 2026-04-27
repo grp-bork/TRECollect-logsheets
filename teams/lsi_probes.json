@@ -1,6 +1,6 @@
 {
     "id": "lsi_probes",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "team": "LSI",
     "name": "Parallel",
     "sections": [
@@ -24,6 +24,11 @@
               {
                 "button_name": "Add leaves"
               }
+          },
+          {
+            "form_id": "lsi_15",
+            "title": "LSI 15 - microplastics",
+            "mandatory": false
           }
         ]
       }

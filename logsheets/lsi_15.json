@@ -1,0 +1,134 @@
+{
+    "id": "lsi_15",
+    "version": "1.0.0",
+    "name": "LSI 15",
+    "description": "Microplastics Form",
+    "fields": [
+      {
+        "id": "soil_section",
+        "label": "Soil",
+        "type": "section"
+      },
+      {
+        "id": "sample_soil_1",
+        "label": "Sample soil (1)",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_soil_2",
+        "label": "Sample soil (2)",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_soil_blank",
+        "label": "Sample soil (blank)",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sediment_section",
+        "label": "Sediment",
+        "type": "section"
+      },
+      {
+        "id": "sample_sediment",
+        "label": "Sample sediment",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_sediment_blank",
+        "label": "Sample sediment (blank)",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "river_section",
+        "label": "River",
+        "type": "section"
+      },
+      {
+        "id": "sample_river",
+        "label": "Sample river",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_river_blank",
+        "label": "Sample river (blank)",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "river_gps",
+        "label": "River GPS coordinates",
+        "type": "gps",
+        "required": false
+      },
+      {
+        "id": "net_deployment_time_start",
+        "label": "Net deployment time start",
+        "type": "time",
+        "default_value": "now",
+        "required": false
+      },
+      {
+        "id": "net_deployment_time_end",
+        "label": "Net deployment time end",
+        "type": "time",
+        "required": false
+      },
+      {
+        "id": "river_flow",
+        "label": "River flow (L/s)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "river_filtration_volume",
+        "label": "River - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "lake_section",
+        "label": "Lake",
+        "type": "section"
+      },
+      {
+        "id": "sample_lake",
+        "label": "Sample lake",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "sample_lake_blank",
+        "label": "Sample lake (blank)",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "lake_gps",
+        "label": "Lake GPS coordinates",
+        "type": "gps",
+        "required": false
+      },
+      {
+        "id": "lake_filtration_volume",
+        "label": "Lake - filtration volume (L)",
+        "type": "text",
+        "inputType": "number",
+        "required": false
+      },
+      {
+        "id": "comments",
+        "label": "Comments",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+}
