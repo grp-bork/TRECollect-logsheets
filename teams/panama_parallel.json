@@ -1,0 +1,17 @@
+{
+    "id": "panama_parallel",
+    "version": "1.0.0",
+    "team": "Panama",
+    "name": "Parallel",
+    "sections": [
+      {
+        "forms": [
+          {
+            "form_id": "panama_3",
+            "title": "Drying analysis",
+            "mandatory": false
+          }
+        ]
+      }
+    ]
+}

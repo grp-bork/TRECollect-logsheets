@@ -1,0 +1,38 @@
+{
+    "id": "panama_2",
+    "version": "1.0.0",
+    "name": "Panama samples",
+    "description": "Samples Form",
+    "fields": [
+      {
+        "id": "seq_1",
+        "label": "SEQ 1",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "seq_2",
+        "label": "SEQ 2",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "fresh",
+        "label": "FRESH",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "dried",
+        "label": "DRIED",
+        "type": "barcode",
+        "required": false
+      },
+      {
+        "id": "comments",
+        "label": "Comments",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+}

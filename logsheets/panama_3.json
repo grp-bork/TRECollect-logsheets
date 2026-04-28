@@ -1,0 +1,52 @@
+{
+    "id": "panama_3",
+    "version": "1.0.0",
+    "name": "Panama 3",
+    "description": "Drying analysis Form",
+    "fields": [
+      {
+        "id": "drying_date_start",
+        "label": "Drying date start",
+        "type": "date",
+        "required": true
+      },
+      {
+        "id": "drying_time_start",
+        "label": "Drying time start",
+        "type": "time",
+        "required": true
+      },
+      {
+        "id": "drying_date_end",
+        "label": "Drying date end",
+        "type": "date",
+        "required": true
+      },
+      {
+        "id": "drying_time_end",
+        "label": "Drying time end",
+        "type": "time",
+        "required": true
+      },
+      {
+        "id": "wet_weight_of_sample",
+        "label": "Wet weight of sample (g)",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "dry_weight_of_sample",
+        "label": "Dry weight of sample (g)",
+        "type": "text",
+        "inputType": "number",
+        "required": true
+      },
+      {
+        "id": "comments",
+        "label": "Comments",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+  }

@@ -1,0 +1,22 @@
+{
+    "id": "panama_soil",
+    "version": "1.0.0",
+    "team": "Panama",
+    "name": "Soil",
+    "sections": [
+      {
+        "forms": [
+          {
+            "form_id": "panama_1",
+            "title": "Panama description",
+            "mandatory": false
+          },
+          {
+            "form_id": "panama_2",
+            "title": "Panama samples",
+            "mandatory": false
+          }
+        ]
+      }
+    ]
+}
