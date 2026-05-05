@@ -1,13 +1,13 @@
 {
-    "id": "panama_parallel",
+    "id": "comadre_parallel",
     "version": "1.0.0",
-    "team": "Panama",
+    "team": "Comadre",
     "name": "Parallel",
     "sections": [
       {
         "forms": [
           {
-            "form_id": "panama_3",
+            "form_id": "comadre_3",
             "title": "Drying analysis",
             "mandatory": false
           }

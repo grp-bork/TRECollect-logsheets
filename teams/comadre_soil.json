@@ -1,18 +1,18 @@
 {
-    "id": "panama_soil",
+    "id": "comadre_soil",
     "version": "1.0.0",
-    "team": "Panama",
+    "team": "Comadre",
     "name": "Soil",
     "sections": [
       {
         "forms": [
           {
-            "form_id": "panama_1",
+            "form_id": "comadre_1",
             "title": "Panama description",
             "mandatory": false
           },
           {
-            "form_id": "panama_2",
+            "form_id": "comadre_2",
             "title": "Panama samples",
             "mandatory": false
           }
