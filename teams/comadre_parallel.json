@@ -1,0 +1,17 @@
+{
+    "id": "comadre_parallel",
+    "version": "1.0.0",
+    "team": "Comadre",
+    "name": "Parallel",
+    "sections": [
+      {
+        "forms": [
+          {
+            "form_id": "comadre_3",
+            "title": "Drying analysis",
+            "mandatory": false
+          }
+        ]
+      }
+    ]
+}
