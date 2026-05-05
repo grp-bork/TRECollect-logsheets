@@ -83,6 +83,15 @@
         "required": false
       },
       {
+        "id": "canopy_structure",
+        "label": "Canopy structure",
+        "type": "table",
+        "rows": ["Emergent big trees", "Canopy medium trees", "Understory trees", "Shrubs", "Liane walls"],
+        "columns": ["Count", "Relative proportion (%)"],
+        "inputType": "number",
+        "required": false
+      },
+      {
         "id": "density_grassland",
         "label": "Grassland density",
         "type": "select",
@@ -216,6 +225,13 @@
         "label": "Colour - organic matter",
         "type": "select",
         "options": ["absence", "low (hardly see any dark colour)", "moderate (brown)", "high (dark)"],
+        "required": false
+      },
+      {
+        "id": "soil_texture_chart",
+        "label": "Soil texture chart",
+        "type": "multiselect",
+        "options": ["Sand", "Clay", "Silt"],
         "required": false
       },
       {
