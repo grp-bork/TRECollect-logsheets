@@ -8,12 +8,12 @@
         "forms": [
           {
             "form_id": "comadre_1",
-            "title": "Panama description",
+            "title": "Comadre description",
             "mandatory": false
           },
           {
             "form_id": "comadre_2",
-            "title": "Panama samples",
+            "title": "Comadre samples",
             "mandatory": false
           }
         ]
