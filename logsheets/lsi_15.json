@@ -1,6 +1,6 @@
 {
     "id": "lsi_15",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "name": "LSI 15",
     "description": "Microplastics Form",
     "fields": [
@@ -48,6 +48,26 @@
         "id": "river_section",
         "label": "River",
         "type": "section"
+      },
+      {
+        "id": "sampling_date_river",
+        "label": "River sampling date",
+        "type": "date",
+        "default_value": "now",
+        "required": true
+      },
+      {
+        "id": "sampling_time_start_river",
+        "label": "River sampling time start",
+        "type": "time",
+        "default_value": "now",
+        "required": true
+      },
+      {
+        "id": "sampling_time_end_river",
+        "label": "River sampling time end",
+        "type": "time",
+        "required": true
       },
       {
         "id": "sample_river",
@@ -98,6 +118,26 @@
         "id": "lake_section",
         "label": "Lake",
         "type": "section"
+      },
+      {
+        "id": "sampling_date_lake",
+        "label": "Lake sampling date",
+        "type": "date",
+        "default_value": "now",
+        "required": true
+      },
+      {
+        "id": "sampling_time_start_lake",
+        "label": "Lake sampling time start",
+        "type": "time",
+        "default_value": "now",
+        "required": true
+      },
+      {
+        "id": "sampling_time_end_lake",
+        "label": "Lake sampling time end",
+        "type": "time",
+        "required": true
       },
       {
         "id": "sample_lake",
