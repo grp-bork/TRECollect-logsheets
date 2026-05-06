@@ -1,6 +1,6 @@
 {
     "id": "lsi_15",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "name": "LSI 15",
     "description": "Microplastics Form",
     "fields": [
@@ -53,14 +53,12 @@
         "id": "sampling_date_river",
         "label": "River sampling date",
         "type": "date",
-        "default_value": "now",
         "required": false
       },
       {
         "id": "sampling_time_start_river",
         "label": "River sampling time start",
         "type": "time",
-        "default_value": "now",
         "required": false
       },
       {
@@ -123,14 +121,12 @@
         "id": "sampling_date_lake",
         "label": "Lake sampling date",
         "type": "date",
-        "default_value": "now",
         "required": false
       },
       {
         "id": "sampling_time_start_lake",
         "label": "Lake sampling time start",
         "type": "time",
-        "default_value": "now",
         "required": false
       },
       {
