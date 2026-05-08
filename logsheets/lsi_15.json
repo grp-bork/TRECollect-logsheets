@@ -1,6 +1,6 @@
 {
     "id": "lsi_15",
-    "version": "1.2.2",
+    "version": "1.3.0",
     "name": "LSI 15",
     "description": "Microplastics Form",
     "fields": [
@@ -86,20 +86,8 @@
         "required": false
       },
       {
-        "id": "net_deployment_time_start",
-        "label": "Net deployment time start",
-        "type": "time",
-        "required": false
-      },
-      {
-        "id": "net_deployment_time_end",
-        "label": "Net deployment time end",
-        "type": "time",
-        "required": false
-      },
-      {
         "id": "river_flow",
-        "label": "River flow (L/s)",
+        "label": "River flow (m3/s)",
         "type": "text",
         "inputType": "number",
         "required": false
